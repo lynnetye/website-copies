@@ -21,8 +21,13 @@ header > h1 {
   padding: 0px 10px;
 }
 
-.navigation-bar > h1 {
+.navigation-bar > h1 a:hover {
   color: white;
+}
+
+#current-page {
+  color: white;
+  font-weight: bolder;
 }
 
 a {
@@ -35,11 +40,6 @@ a:active {
 
 a:hover {
   color: white;
-  font-style: bold;
-}
-
-a:link {
-  color: rgb(192, 194, 197);
 }
 
 a:visited {
@@ -78,6 +78,6 @@ a:visited {
   text-decoration: underline;
 }
 
-#bottom-navigation-bar > a a:link a:active a:hover a:visited {
+#bottom-navigation-bar a {
   color: white;
 }
