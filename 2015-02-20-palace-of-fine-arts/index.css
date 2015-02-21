@@ -1,0 +1,83 @@
+html {
+  background-color: black;
+  font-family: Arial;
+  color: rgb(192, 194, 197);
+}
+
+header > h1 {
+  font-family: Times;
+  font-size: 36px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.navigation-bar {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.navigation-bar > h1 {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.navigation-bar > h1 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+}
+
+a:hover {
+  color: white;
+  font-style: bold;
+}
+
+a:link {
+  color: rgb(192, 194, 197);
+}
+
+a:visited {
+  color: rgb(192, 194, 197);
+}
+
+#line {
+  background-color: white;
+  height: 1px;
+  margin: 20px auto;
+  width: 630px;
+}
+
+#image {
+  height: 293px;
+  margin: 0px auto;
+  width: 630px;
+}
+
+.container {
+  text-align: center;
+}
+
+.container div {
+  display: inline-block;
+  font-family: Times;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 10px 50px;
+  text-align: left;
+}
+
+#bottom-navigation-bar {
+  font-size: 13px;
+  margin-top: 300px;
+  text-decoration: underline;
+}
+
+#bottom-navigation-bar > a a:link a:active a:hover a:visited {
+  color: white;
+}
