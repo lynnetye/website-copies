@@ -82,21 +82,25 @@ ul {
   font-size: 60px;
 }
 
-#just-text {
-  display: block;
-}
-
-#just-text {
+.just-text {
   background-color: #8683E8;
   color: white;
+  display: block;
   font-size: 90px;
   height: 1200px;
   text-align: center;
   width: 50%;
 }
 
-#just-text > * {
+.just-text > * {
   padding-top: 600px;
+}
+
+h3:hover {
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 15px;
+
 }
 
 #nomak {
