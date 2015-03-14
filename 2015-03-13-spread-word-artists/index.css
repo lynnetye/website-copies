@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/*top banner */
+.container-top-banner {
+  font-size: 70px;
+  display: absolute;
+  height: 200px;
+  width: 100%;
+}
+
+.icon {
+  background-image: url("blue-background.jpg");
+  background-size: 100px;
+
+  height: 100px;
+  margin: 50px;
+  position: absolute;
+  width: 100px;
+}
+
+.spread-the-word {
+  text-align: right;
+  position: absolute;
+  margin: 70px auto;
+  width: 100%;
+}
+
+.spread-the-word > h1 {
+  padding-right: 100px;
+}
+
+/*end of top banner*/
+
+
+/*image list section*/
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.first-layer-image {
+  background-size: cover;
+  height: 1200px;
+  width: 50%;
+}
+
+.second-layer-background-text {
+  display:block;
+  height: 1200px;
+  width: 50%px;
+}
+
+.second-layer-background-text > * {
+  opacity: 0;
+}
+
+.second-layer-background-text:hover {
+  background-color: #90f0a0;
+  display:block;
+  height: 1200px;
+  opacity: .75;
+  width: 50%px;
+}
+
+.second-layer-background-text:hover > * {
+  color: white;
+  font-size: 150px;
+  opacity: 1;
+  text-align: center;
+}
+
+.second-layer-background-text:hover > h1 {
+  padding-top: 500px;
+}
+
+.second-layer-background-text:hover > h2 {
+  font-size: 60px;
+}
+
+#just-text {
+  display: block;
+}
+
+#just-text {
+  background-color: #8683E8;
+  color: white;
+  font-size: 90px;
+  height: 1200px;
+  text-align: center;
+  width: 50%;
+}
+
+#just-text > * {
+  padding-top: 600px;
+}
+
+#nomak {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/nomak.jpg");
+}
+
+#qiwu {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/qiwu.jpg");
+}
+
+#mental-abstrato {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/mental_abstrato.jpg")
+}
+
+#lady-paradox {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/lady_paradox.jpg")
+}
+
+#lucid-music {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/lucid_music.jpg");
+}
+
+/*end of image list section*/
+
+/*footer section*/
+.footer {
+  font-size: 50px;
+  height: 250px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer > p {
+  padding-top: 120px;
+  color: gray;
+}
+/*end of footer section*/
