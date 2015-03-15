@@ -10,23 +10,23 @@ ul {
 .first-layer-image {
   background-image: url("http://cdn-s.hellomonday.com/assets/images/gfx3d/yt-kids-01.jpg?v=128");
   background-size: cover;
-  min-height: 1500px;
-  min-width: 2000px;
+  min-height: 375px;
+  min-width: 500px;
 }
 
 .second-layer-image {
   background-image: url("http://cdn-s.hellomonday.com/assets/images/gfx3d/yt-kids-02.png?v=128");
   background-size: cover;
-  background-position: -50px -50px;
-  height: 1500px;
+  background-position: -12.5px -12.5px;
+  height: 375px;
   width: 100%;
 }
 
 .third-layer-image {
   background-image: url("http://cdn-s.hellomonday.com/assets/images/gfx3d/yt-kids-03.png?v=128");
   background-size: cover;
-  background-position: -60px 0px;
-  height: 1500px;
+  background-position: -15px 0px;
+  height: 375px;
   width: 100%;
 }
 
@@ -39,11 +39,11 @@ ul {
 .fourth-layer-with-text  {
   background-color: rgba(230, 33, 23, 0.8);
   font-family: 'Droid Serif', serif;
-  font-size: 100px;
+  font-size: 25px;
   font-weight: 700;
   position: relative;
   top: 5%;
-  width: 1800px;
+  width: 450px;
   opacity: 0;
 }
 
@@ -53,22 +53,22 @@ ul {
 
 .fourth-layer-with-text > h1 {
   color: white;
-  padding: 700px 0px 0px 60px;
+  padding: 175px 0px 0px 15px;
 }
 
 .fourth-layer-with-text > h2 {
-  padding: 30px 0px 0px 60px;
+  padding: 7.5px 0px 0px 15px;
   color: #741916;
 }
 
 .icon-to-article {
   display: block;
-  width: 135px;
-  height: 135px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
   cursor: pointer;
-  left: 40px;
-  bottom: 70px;
+  left: 10px;
+  bottom: 17.5px;
   background: rgb(255, 255, 255);
   position: absolute;
 }

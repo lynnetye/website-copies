@@ -14,4 +14,5 @@ $("div").click(function() {
 
 }
 
-$(intro).css({ "color":"green", "border":"1px solid black", "visibility":"inherit"});
+// example code?
+  // $(intro).css({ "color":"green", "border":"1px solid black", "visibility":"inherit"});
