@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+}
+
+.first-layer-image {
+  background-image: url("http://cdn-s.hellomonday.com/assets/images/gfx3d/yt-kids-01.jpg?v=128");
+  background-size: cover;
+  min-height: 1500px;
+  min-width: 2000px;
+}
+
+.second-layer-image {
+  background-image: url("http://cdn-s.hellomonday.com/assets/images/gfx3d/yt-kids-02.png?v=128");
+  background-size: cover;
+  background-position: -50px -50px;
+  height: 1500px;
+  width: 100%;
+}
+
+.third-layer-image {
+  background-image: url("http://cdn-s.hellomonday.com/assets/images/gfx3d/yt-kids-03.png?v=128");
+  background-size: cover;
+  background-position: -60px 0px;
+  height: 1500px;
+  width: 100%;
+}
+
+.third-layer-image > * {
+  height: 90%;
+  margin: 0px auto;
+  max-height: 90%;
+}
+
+.fourth-layer-with-text  {
+  background-color: rgba(230, 33, 23, 0.8);
+  font-family: 'Droid Serif', serif;
+  font-size: 100px;
+  font-weight: 700;
+  position: relative;
+  top: 5%;
+  width: 1800px;
+  opacity: 0;
+}
+
+.fourth-layer-with-text:hover {
+  opacity: 1;
+}
+
+.fourth-layer-with-text > h1 {
+  color: white;
+  padding: 700px 0px 0px 60px;
+}
+
+.fourth-layer-with-text > h2 {
+  padding: 30px 0px 0px 60px;
+  color: #741916;
+}
+
+.icon-to-article {
+  display: block;
+  width: 135px;
+  height: 135px;
+  border-radius: 100%;
+  cursor: pointer;
+  left: 40px;
+  bottom: 70px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+}
+
