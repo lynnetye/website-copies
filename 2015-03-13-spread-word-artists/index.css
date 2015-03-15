@@ -43,16 +43,14 @@ ul {
 
 .second-layer-background-text {
   align-items: center;
+  background-color: hsla(124,81%,74%, 0);
   display: flex;
   flex-direction: column;
   height: 300px;
+  opacity: 0;
+  transition: background-color .5s;
   width: 100%;
 }
-
-.second-layer-background-text > * {
-  opacity: 0;
-}
-
 
 .second-layer-background-text > h1 {
   padding-top: 100px;
@@ -63,11 +61,10 @@ ul {
   padding-top: 120px;
 }
 
-
 .second-layer-background-text:hover {
-  background-color: #90f0a0;
+  background-color: hsla(124,81%,74%,1);
   height: 300px;
-  opacity: .75;
+  opacity: .8;
   width: 100%;
 }
 
