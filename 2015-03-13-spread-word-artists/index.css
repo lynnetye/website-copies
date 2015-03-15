@@ -118,15 +118,14 @@ h3:hover {
 /*end of image list section*/
 
 /*footer section*/
-.footer {
-  font-size: 12.5px;
-  height: 62.5px;
-  text-align: center;
-  width: 100%;
+
+footer {
+  align-items: center;
+  color: gray;
+  display: flex;
+  font-size: 14px;
+  height: 60px;
+  justify-content: center;
 }
 
-.footer > p {
-  padding-top: 30px;
-  color: gray;
-}
 /*end of footer section*/
