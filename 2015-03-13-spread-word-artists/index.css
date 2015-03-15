@@ -5,32 +5,24 @@ html {
 }
 
 /*top banner */
-.container-top-banner {
-  font-size: 17.5px;
-  display: absolute;
+
+header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   height: 50px;
-  width: 100%;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 .icon {
   background-image: url("blue-background.jpg");
-  background-size: 25px;
-
-  height: 25px;
-  margin: 12.5px;
-  position: absolute;
-  width: 25px;
+  height: 15px;
+  width: 15px;
 }
 
 .spread-the-word {
-  text-align: right;
-  position: absolute;
-  margin: 17.5px auto;
-  width: 100%;
-}
 
-.spread-the-word > h1 {
-  padding-right: 25px;
 }
 
 /*end of top banner*/
