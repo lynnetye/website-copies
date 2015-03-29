@@ -5,21 +5,21 @@ html {
 
 .cloud-banner {
   background-image: url('https://www.squareweave.com.au/app/theme/default/design/images/home/sky.jpg');
-  height: 1050px;
+  height: 525px;
   width: 100%;
   text-align: right;
 }
 
 .navigation-bar {
   display: inline;
-  padding: 100px;
+  padding: 50px;
 }
 
 .navigation-bar > h1 {
-  font-size: 30px;
+  font-size: 16px;
   font-style: bold;
   display: inline-block;
-  padding: 50px 100px 50px 0px;
+  padding: 25px 50px 25px 0px;
 }
 
 .banner {
@@ -35,14 +35,14 @@ html {
 }
 
 .banner > #tree-image > img {
-  height: 850px;
-  width: 800px;
-  padding-top: 150px;
-  padding-left: 40px;
+  height: 425px;
+  width: 400px;
+  padding-top: 75px;
+  padding-left: 20px;
 }
 
 .banner > #text > h1 {
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   vertical-align: center;
 }
