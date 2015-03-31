@@ -110,3 +110,72 @@ body {
   font-size: 46px;
   font-weight: bold;
 }
+
+.quick-info-section {
+  height: 800px;
+  line-height: 200%;
+  text-align: center;
+  width: 900px;
+}
+
+.quick-info-section h2 {
+  color: #555555;
+}
+
+.quick-info-section > div {
+  text-align: center;
+}
+
+.quick-info-section > .four-quarters > div > img {
+  height: 100px;
+  width: 100px;
+}
+
+.header {
+  padding-top: 60px;
+}
+
+.header > h1 {
+  font-size: 36px;
+}
+
+.header > h2 {
+  font-size: 18px;
+}
+
+
+.subtext > h1 h2 {
+  text-align: center;
+}
+
+.subtext > h1 {
+  font-family: 30px;
+  font-size: 24px;
+  padding-top: 50px;
+}
+
+.subtext > h2 {
+  font-size: 18px;
+}
+
+.four-quarters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.four-quarters > div {
+  padding: 30px 20px;
+  width: 400px;
+}
+
+
+.four-quarters > div > h1 {
+  font-size: 22px;
+}
+
+.four-quarters > div > h2 {
+  font-size: 16px;
+}
