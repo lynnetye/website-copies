@@ -9,12 +9,14 @@ body {
 
 .nav-bar {
   align-items: center;
+  background-color: white;
   color: #216ba5;
   font-size: 14px;
   font-weight: bold;
-  height: 60px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 
 .nav-bar > .left, .right {
@@ -22,25 +24,21 @@ body {
 }
 
 .nav-bar > div > h1 {
-  padding: 0px 20px
+  padding: 30px 20px
 }
 
 .landing-section {
   background-image: url('https://hackerone.com/assets/customer-pages/bg-4b0767569e715b53e4db47c2be65f5d4.png');
   background-size: inherit;
-  height: 500px;
-  width: 100%;
-}
-
-.landing-section {
   color: white;
-  text-align: center;
   padding: 10px auto;
+  text-align: center;
+  width: 100%;
 }
 
 .landing-section > h1 {
   font-size: 70px;
-  padding: 60px 30px 40px 30px;
+  padding: 130px 30px 40px 30px;
 }
 
 .landing-section > h2 {
@@ -51,6 +49,10 @@ body {
 .landing-section > h3 {
   font-size: 24px;
   padding: 30px 0px;
+}
+
+.landing-section > h4 {
+  padding-bottom: 50px;
 }
 
 .view-programs-section {
@@ -114,8 +116,9 @@ body {
 .quick-info-section {
   height: 800px;
   line-height: 200%;
+  margin: 0 auto;
   text-align: center;
-  width: 900px;
+  max-width: 900px;
 }
 
 .quick-info-section h2 {
