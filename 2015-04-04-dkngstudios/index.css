@@ -6,16 +6,13 @@ html {
 }
 
 nav {
+  align-items: center;
   background: #282B33;
+  display: flex;
   height: 50px;
+  justify-content: center;
   position: fixed;
   width: 100%;
-}
-
-.nav-body {
-  align-items: center;
-  display: flex;
-  justify-content: center;
 }
 
 .logo {
@@ -51,7 +48,7 @@ section {
 }
 
 .blog-body {
-  padding-left: 30px ;
+  margin-left: 30px ;
   text-align: left;
   width: 500px;
 }
@@ -145,7 +142,7 @@ button {
   width: 100%;
 }
 
-.mailing-list > .search-boxes {
+.mailing-list > .input-form {
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -153,7 +150,13 @@ button {
 }
 
 form {
-  padding: 0px 8px;
+  padding: 0px 10px;
+}
+
+form > input {
+  height: 40px;
+  padding: 0px 5px;
+  width: 180px;
 }
 
 #sign-up {
@@ -167,12 +170,8 @@ footer {
   display: flex;
   font-size: 11px;
   justify-content: center;
-  padding-top: 15px;
 }
 
-footer, a {
-  padding: 20px 15px;
-}
-footer > div {
-  padding: 15px 0px;
+footer > a {
+  padding: 20px;
 }
