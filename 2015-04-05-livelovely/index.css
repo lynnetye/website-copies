@@ -15,7 +15,7 @@ nav > .right-side {
   padding: 10px;
 }
 
-.right-side > p, button {
+.right-side > a, button {
   padding: 10px;
 }
 
@@ -32,26 +32,26 @@ nav > .logo {
   margin: 0px 10px;
 }
 
-main {
+.hero {
   background-image: url('https://livelovely.com/static/images/home-page/bg-hero.jpg');
   background-size: cover;
   color: white;
   font-size: 38px;
   font-weight: 300;
-  height: 550px;
+  height: 320px;
+  padding-top: 200px;
   text-align: center;
 }
 
-main > p {
+.hero > h2 {
   letter-spacing: 3px;
-  padding-top: 200px;
 }
 
-main > form {
-  padding-top: 50px;
+.hero > form {
+  margin: 50px auto;
 }
 
-main > form > input {
+.hero > form > input {
   border: none;
   border-radius: 5px;
   font-size: 14px;
@@ -63,16 +63,23 @@ main > form > input {
 
 .other-cities {
   max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.other-cities > h3 {
+  color: #333;
+  font-size: 28px;
   margin: 0px auto;
 }
 
-.other-cities > p {
-  color: #333;
-  font-size: 28px;
-  margin: 50px auto;
-}
 .other-cities > .top-row, .bottom-row {
   display: flex;
+  justify-content: center;
+}
+
+.top-row {
+  margin-top: 50px;
 }
 
 .top-row > div > p {
@@ -81,6 +88,7 @@ main > form > input {
   font-size: 22px;
   margin-top: 200px;
   margin-left: 15px;
+  text-align: left;
 }
 
 .bottom-row > div > p {
@@ -89,6 +97,7 @@ main > form > input {
   font-size: 22px;
   margin-top: 200px;
   margin-left: 15px;
+  text-align: left;
 }
 
 .other-cities > div > div {
@@ -208,6 +217,12 @@ main > form > input {
   border-bottom: 1px solid #e5e5e5;
   padding: 80px;
 }
+
+.almost-home {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
 .almost-home > .company-logos > img {
   height: 30px;
   padding: 0px 50px;
