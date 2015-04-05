@@ -208,6 +208,17 @@ nav > .logo {
   justify-content: flex-start;
 }
 
+.button-links > button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button-links > button > .fa {
+  margin-right: 5px;
+}
+
+
 .almost-home > .company-logos {
   display: flex;
   justify-content: center;
