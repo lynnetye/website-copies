@@ -1,0 +1,84 @@
+html {
+  background-image: url('http://static1.squarespace.com/static/5318fc83e4b0c6f4c17d8e17/t/54f4e776e4b010d2dd826800/1425336182518/kraft3.jpg');
+  background-size: initial;
+  font-family: PT Sans Caption;
+  height: 100%;
+  width: 100%;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  margin: 40px auto;
+  width: 400px;
+}
+
+nav {
+  color: #642D11;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  margin: 0px auto;
+  max-width: 90%;
+}
+
+nav > p {
+  letter-spacing: 2px;
+  padding: 10px 20px;
+}
+
+.sale-items {
+  display: flex;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.item-container > img {
+  height: 260px;
+  max-height: 300px;
+  max-width: 420px;
+  min-height: 240px;
+  min-width: 360px;
+  transition: opacity 1s;
+  width: 400px;
+}
+
+.item-container > h1 {
+  color: #c42112;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 10px auto;
+}
+
+.item-container > h2 {
+  color: #c42112;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.item-container > img:hover {
+  opacity: .6;
+}
+
+.item-container > h1:hover, h2:hover {
+  color: #642D11;
+}
+
+footer {
+  color: #642D11;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  text-align: center;
+}
