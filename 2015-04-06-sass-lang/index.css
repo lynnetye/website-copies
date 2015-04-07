@@ -4,6 +4,7 @@ html {
 
 .announcement {
   background-color: #036;
+  padding: 18px;
   text-align: center;
 }
 
@@ -21,41 +22,39 @@ html {
   margin-left: 5px;
 }
 
-
-
-
-.nav-bar {
+.top-bar {
   background-image: url(images/grey-prism.svg);
-  height: 250px;
 }
 
-.nav-bar > img {
-  display: inline;
-  height: 150px;
-  margin-left: 50px;
-  width: 150px;
-}
-
-.nav-bar > .list {
-  /*bottom: 75%;*/
-  top: -80px;
-  display: inline;
-  margin-left: 30%;
+.top-bar > img {
+  display: inline-block;
+  /*margin: 20px 50px;*/
   position: relative;
+  width: 15%;
 }
 
-.nav-bar > .list > p {
-  color: #b37399;
-  display: inline;
+.top-bar > .list {
+  display: inline-block;
+  position: relative;
+  /*margin: 20px auto;*/
+  text-align: right;
+  width: 80%;
+}
+
+.top-bar > .list > p {
+  color: #c69;
+  display: inline-block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: .75em;
   margin: 0px 10px;
+  position: relative;
+  vertical-align: middle;
 }
 
 .superpowers {
   bottom: 30px;
   color: #808c99;
-  font-size: 80px;
+  font-size: 3em;
   font-weight: 300;
   position: relative;
   text-align: center;
