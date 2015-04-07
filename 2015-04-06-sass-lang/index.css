@@ -4,26 +4,25 @@ html {
 
 .announcement {
   background-color: #036;
-  height: 50px;
   text-align: center;
-  top: 50%;
 }
 
 .announcement > p {
-  display: block;
+  display: inline;
   letter-spacing: .5px
 }
 
 .announcement > #blue {
   color: #b3d4fc;
-  vertical-align: middle;
 }
 
 .announcement > #white {
   color: white;
   margin-left: 5px;
-  vertical-align: middle;
 }
+
+
+
 
 .nav-bar {
   background-image: url(images/grey-prism.svg);
