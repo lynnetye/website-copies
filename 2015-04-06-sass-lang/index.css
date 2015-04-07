@@ -1,0 +1,129 @@
+html {
+  font-family: Source Sans Pro;
+}
+
+.announcement {
+  background-color: #036;
+  height: 50px;
+  text-align: center;
+  top: 50%;
+}
+
+.announcement > p {
+  display: block;
+  letter-spacing: .5px
+}
+
+.announcement > #blue {
+  color: #b3d4fc;
+  vertical-align: middle;
+}
+
+.announcement > #white {
+  color: white;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.nav-bar {
+  background-image: url(images/grey-prism.svg);
+  height: 250px;
+}
+
+.nav-bar > img {
+  display: inline;
+  height: 150px;
+  margin-left: 50px;
+  width: 150px;
+}
+
+.nav-bar > .list {
+  /*bottom: 75%;*/
+  top: -80px;
+  display: inline;
+  margin-left: 30%;
+  position: relative;
+}
+
+.nav-bar > .list > p {
+  color: #b37399;
+  display: inline;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+.superpowers {
+  bottom: 30px;
+  color: #808c99;
+  font-size: 80px;
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+}
+
+.glasses > .image .text {
+  display: inline;
+  width: 45%;
+}
+.glasses > .image > img {
+  display: inline;
+  margin: 20px 0px 0px 50px;
+  max-width: 600px;
+}
+
+.glasses > .text > p {
+  color: #699;
+  font-size: 26px;
+  display: inline;
+  text-align: right;
+}
+
+.pink-banner {
+  background-color: #c6538c;
+  height: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.pink-banner > ul {
+  padding-top: 15px;
+}
+
+.pink-banner > ul > li {
+  color: white;
+  font-size: 22px;
+  display: inline;
+  margin: 0px 15px;
+  width: 30%;
+}
+
+.info {
+  text-align: center;
+  width: 100%;
+
+}
+
+.info > .feature {
+  display: inline-block;
+  max-width: 25%;
+  margin: 20px auto;
+  letter-spacing: .25px
+
+}
+
+.feature > h2 {
+  color: #808c99;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: left;
+}
+
+.feature > p {
+  color: #484c55;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+}
