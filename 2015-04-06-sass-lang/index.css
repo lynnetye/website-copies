@@ -24,31 +24,31 @@ html {
 
 .top-bar {
   background-image: url(images/grey-prism.svg);
+  height: 100%;
+  width: 100%;
 }
 
 .top-bar > img {
   display: inline-block;
-  /*margin: 20px 50px;*/
   position: relative;
-  width: 15%;
+  width: 10%;
 }
 
 .top-bar > .list {
   display: inline-block;
-  position: relative;
-  /*margin: 20px auto;*/
+  position: absolute;
   text-align: right;
-  width: 80%;
+  width: 90%;
+  top: 50%;
 }
 
-.top-bar > .list > p {
+.top-bar, p {
   color: #c69;
   display: inline-block;
   font-weight: 500;
-  font-size: .75em;
-  margin: 0px 10px;
+  font-size: 1em;
+  margin-right: 30px;
   position: relative;
-  vertical-align: middle;
 }
 
 .superpowers {
