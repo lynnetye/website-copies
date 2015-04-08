@@ -40,29 +40,23 @@ html {
   display: inline-block;
   position: absolute;
   text-align: right;
+  top: 25%;
   white-space: nowrap;
   width: 85%;
-  top: 25%;
-}
-
-@media screen and (max-width:750px) and (min-width:300px) {
-  .top-bar > .list {
-    font-size: 13px;
-  }
 }
 
 .top-bar > .list > p {
   color: #c69;
   display: inline-block;
-  font-weight: 500;
   font-size: 1em;
+  font-weight: 500;
   margin-right: 30px;
   position: relative;
 }
 
 .bottom-bar {
   color: #808c99;
-  font-size: 3em;
+  font-size: 80px;
   font-weight: 300;
   padding: 50px;
   position: relative;
@@ -75,9 +69,9 @@ html {
 
 .glasses > div {
   display: inline-block;
-  width: 49%;
   position: relative;
   text-align: center;
+  width: 49%;
 }
 
 .glasses > .image > img {
@@ -108,15 +102,15 @@ html {
 
 .pink-banner > ul > li {
   color: white;
-  font-size: 20px;
   display: inline;
+  font-size: 20px;
   margin: 0px 15px;
   width: 30%;
 }
 
 .info {
-  text-align: center;
   margin: 10px 0px 60px 0px;
+  text-align: center;
 }
 
 .info > .feature {
@@ -124,8 +118,8 @@ html {
   font-size: 18px;
   line-height: 140%;
   margin-left: 25px;
-  width: 29%;
   vertical-align: top;
+  width: 29%;
 }
 
 .feature > h2 {
@@ -147,7 +141,6 @@ html {
 footer {
   background-image: url(images/grey-prism.svg);
   background-size: cover;
-
   text-align: center;
   width: 100%;
 }
@@ -158,15 +151,14 @@ footer > div {
 }
 
 footer > .left {
-  width: 25%;
   line-height: 120%;
   margin: 15px auto;
+  width: 25%;
 }
 
 footer > .left > p {
   color: #484c55;
   font-size: 14px;
-  /*height: 30px;*/
   margin: 5px auto;
   text-align: left;
   top: 10px;
@@ -178,11 +170,11 @@ footer > .center {
 }
 
 footer > .center > p {
-  font-size: 14px;
+  bottom: 30px;
   display: inline-block;
+  font-size: 14px;
   margin: 0px 10px;
   position: relative;
-  bottom: 30px;
 }
 
 footer > .right {
@@ -197,10 +189,10 @@ footer > .right > button {
   background-color: #eee;
   border-radius: 5px;
   bottom: 20px;
-  position: absolute;
   font-size: 15px;
   font-weight: 600;
   height: 30px;
+  position: absolute;
   right: 30px;
   width: 180px;
 }
@@ -208,4 +200,42 @@ footer > .right > button {
 button > i {
   color: #4099ff;
   margin-right: 5px;
+}
+
+@media screen and (max-width:750px) and (min-width:300px) {
+  .top-bar > .list {
+    font-size: 13px;
+  }
+  .bottom-bar {
+    font-size: 50px;
+  }
+  .glasses > .text {
+    display: none;
+  }
+  .pink-banner > ul > li {
+    font-size: 13px;
+    margin: 0px 5px
+  }
+}
+
+@media screen and (max-width:1000px) and (min-width:850px) {
+  footer > .center > p {
+    display: block;
+  }
+}
+
+@media screen and (max-width:850px) and (min-width:300px) {
+  footer > .left {
+    display: none;
+  }
+  footer > .center > p {
+    display: none;
+  }
+  footer > .right {
+    text-align: center;
+  }
+  footer > .right > button {
+    margin: 20px auto;
+    position: static;
+  }
 }
