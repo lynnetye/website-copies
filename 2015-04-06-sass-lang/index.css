@@ -30,6 +30,7 @@ html {
 
 .top-bar > img {
   display: inline-block;
+  margin: 20px 0px 0px 50px;
   position: relative;
   width: 10%;
 }
@@ -38,11 +39,18 @@ html {
   display: inline-block;
   position: absolute;
   text-align: right;
-  width: 90%;
-  top: 50%;
+  white-space: nowrap;
+  width: 85%;
+  top: 25%;
 }
 
-.top-bar, p {
+@media screen and (max-width:750px) and (min-width:300px) {
+  .top-bar > .list {
+    font-size: 13px;
+  }
+}
+
+.list > p {
   color: #c69;
   display: inline-block;
   font-weight: 500;
@@ -51,30 +59,40 @@ html {
   position: relative;
 }
 
-.superpowers {
-  bottom: 30px;
+.bottom-bar {
   color: #808c99;
   font-size: 3em;
   font-weight: 300;
+  padding: 50px;
   position: relative;
   text-align: center;
 }
 
-.glasses > .image .text {
-  display: inline;
-  width: 45%;
+/*.glasses {
+  position: relative;
+}*/
+
+.glasses > div {
+  display: inline-block;
+  width: 50%;
 }
+
 .glasses > .image > img {
-  display: inline;
-  margin: 20px 0px 0px 50px;
-  max-width: 600px;
+  padding: 25px;
+  width: 80%;
+  position: relative;
 }
+
+/*.glasses > .text {
+  position: relative;
+}*/
 
 .glasses > .text > p {
   color: #699;
   font-size: 26px;
-  display: inline;
-  text-align: right;
+  text-align: left;
+  position: absolute;
+  vertical-align: middle;
 }
 
 .pink-banner {
