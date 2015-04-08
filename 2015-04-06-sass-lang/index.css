@@ -25,6 +25,7 @@ html {
 .top-bar {
   background-image: url(images/grey-prism.svg);
   height: 100%;
+  position: relative;
   width: 100%;
 }
 
@@ -50,7 +51,7 @@ html {
   }
 }
 
-.list > p {
+.top-bar > .list > p {
   color: #c69;
   display: inline-block;
   font-weight: 500;
@@ -68,37 +69,36 @@ html {
   text-align: center;
 }
 
-/*.glasses {
+.glasses {
   position: relative;
-}*/
+}
 
 .glasses > div {
   display: inline-block;
-  width: 50%;
+  width: 49%;
+  position: relative;
+  text-align: center;
 }
 
 .glasses > .image > img {
-  padding: 25px;
+  padding: 50px 0px;
   width: 80%;
-  position: relative;
 }
 
-/*.glasses > .text {
-  position: relative;
-}*/
-
-.glasses > .text > p {
+.glasses > .text {
   color: #699;
   font-size: 26px;
-  text-align: left;
+  line-height: 150%;
+  margin-left: 10px;
   position: absolute;
-  vertical-align: middle;
+  right: 50px;
+  text-align: left;
+  top: 30%;
 }
 
 .pink-banner {
   background-color: #c6538c;
   height: 50px;
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -108,7 +108,7 @@ html {
 
 .pink-banner > ul > li {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   display: inline;
   margin: 0px 15px;
   width: 30%;
@@ -116,30 +116,96 @@ html {
 
 .info {
   text-align: center;
-  width: 100%;
-
+  margin: 10px 0px 60px 0px;
 }
 
 .info > .feature {
   display: inline-block;
-  max-width: 25%;
-  margin: 20px auto;
-  letter-spacing: .25px
-
+  font-size: 18px;
+  line-height: 140%;
+  margin-left: 25px;
+  width: 29%;
+  vertical-align: top;
 }
 
 .feature > h2 {
   color: #808c99;
-  font-size: 20px;
+  font-family: Source Serif Pro;
   font-weight: 600;
-  line-height: 120%;
+  letter-spacing: .5px;
+  margin-top: 50px;
+  margin-bottom: 15px;
   text-align: left;
 }
 
 .feature > p {
   color: #484c55;
-  font-size: 18px;
   font-weight: 400;
-  line-height: 120%;
   text-align: left;
+}
+
+footer {
+  background-image: url(images/grey-prism.svg);
+  background-size: cover;
+
+  text-align: center;
+  width: 100%;
+}
+
+footer > div {
+  color: #484c55;
+  display: inline-block;
+}
+
+footer > .left {
+  width: 25%;
+  line-height: 120%;
+  margin: 15px auto;
+}
+
+footer > .left > p {
+  color: #484c55;
+  font-size: 14px;
+  /*height: 30px;*/
+  margin: 5px auto;
+  text-align: left;
+  top: 10px;
+}
+
+footer > .center {
+  text-align: center;
+  width: 50%;
+}
+
+footer > .center > p {
+  font-size: 14px;
+  display: inline-block;
+  margin: 0px 10px;
+  position: relative;
+  bottom: 30px;
+}
+
+footer > .right {
+  width: 20%;
+}
+
+.right {
+  position: relative;
+}
+
+footer > .right > button {
+  background-color: #eee;
+  border-radius: 5px;
+  bottom: 20px;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 600;
+  height: 30px;
+  right: 30px;
+  width: 180px;
+}
+
+button > i {
+  color: #4099ff;
+  margin-right: 5px;
 }
