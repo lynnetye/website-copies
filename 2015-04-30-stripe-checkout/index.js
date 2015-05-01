@@ -22,6 +22,7 @@ $(document).ready(function(){
 var $showMeButton = $('.show-me-button'),
     $articleTitle = $('article > h1'),
     $articleBody = $('article > p'),
+    $iPhone = $('.iphone'),
     $dribbbleExample = $('.dribbble-example');
 
 function startDemo(){
@@ -29,5 +30,10 @@ function startDemo(){
   $articleTitle.animate({top: '150px', opacity: '0'}, '1000');
   $articleBody.animate({top: '100px', opacity: '0'}, '1200');
   $showMeButton.animate({top: '80px', opacity: '0'}, '1500');
-  $dribbbleExample.animate({right: '200px'}, '1500');
+  $iPhone.animate({left: '150px'}, '1500', function(){
+    $(this).animate({display: 'none'})
+    $dribbbleExample.animate({right: '200px'}, '10000');
+  });
+
+
 };
