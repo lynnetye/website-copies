@@ -16,6 +16,8 @@ body {
 nav {
   text-align: center;
   position: absolute;
+
+  overflow: hidden;
   width: 100%;
 }
 
@@ -25,14 +27,17 @@ nav > p {
   padding: 30px;
 }
 
+/*SLIDE ONE*/
 article {
   color: white;
   font-weight: 300;
+  left: 20%;
   letter-spacing: 1px;
-  margin: 250px 0px;
+  margin: 250px auto;
   padding-top: 80px;
   text-align: center;
-  width: 50%;
+  position: absolute;
+  width: 30%;
 }
 
 article > h1,
@@ -93,8 +98,9 @@ article > p {
 
 form {
   margin-top: 200px;
-  width: 50%;
-  position: relative;
+  left: 50%;
+  width: 30%;
+  position: absolute;
 }
 
 form > div.dribbble-example {
@@ -159,4 +165,30 @@ div.dribbble-example > p.form-remember-me {
   top: 347px;
 }
 
+/*SLIDE TWO*/
+article.slide-2.part-1 {
+  line-height: 40px;
+  text-align: left;
+  left: 10%;
+  opacity: 0;
+  top: 100px;
+  width: 400px;
+  z-index: -1;
+}
 
+article.slide-2.part-1 > h1,
+article.slide-2.part-1 > p {
+  width: 100%;
+}
+
+article.slide-2.part-1 > h1 {
+  font-size: 30px;
+}
+
+article.slide-2.part-1 > p {
+  font-size: 22px;
+}
+
+.hide {
+  display: none;
+}
