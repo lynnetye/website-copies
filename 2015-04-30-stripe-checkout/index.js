@@ -1,7 +1,6 @@
 $(document).ready(function(){
   var text = "This is a test string.",
-      $displayText = $('.text-box'),
-      $showMeButton = $('.show-me-button');
+      $displayText = $('.text-box');
 
   function typeInInput($input, text){
     var string = '',
@@ -14,18 +13,21 @@ $(document).ready(function(){
         x++;
       }, 500 * i);
     }
-
   };
+
+  // start typing demo
   typeInInput($displayText, text);
 });
 
-$(document).ready(function(){
-  var $showMeButton = $('.show-me-button');
+var $showMeButton = $('.show-me-button'),
+    $articleTitle = $('article > h1'),
+    $articleBody = $('article > p'),
+    $dribbbleExample = $('.dribbble-example');
 
-  $showMeButton.on('click', function(event){
-    event.preventDefault();
-
-    debugger
-    // $showMeButton.animate({top: 200px});
-  })
-});
+function startDemo(){
+  console.log("called function");
+  $articleTitle.animate({top: '150px', opacity: '0'}, '1000');
+  $articleBody.animate({top: '100px', opacity: '0'}, '1200');
+  $showMeButton.animate({top: '80px', opacity: '0'}, '1500');
+  $dribbbleExample.animate({right: '200px'}, '1500');
+};

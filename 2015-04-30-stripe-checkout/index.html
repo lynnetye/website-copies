@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -17,9 +17,10 @@
   <article>
     <h1>Checkout</h1>
     <p>The best payment flow, on web and mobile.</p>
-    <button class="show-me-button" type="button">Show me <img class="show-me-arrow" src="https://stripe.com/img/checkout/marketing/play-button/default.svg"></button>
+    <button class="show-me-button" onclick="startDemo()"type="button">Show me <img class="show-me-arrow" src="https://stripe.com/img/checkout/marketing/play-button/default.svg"></button>
   </article>
   <form action="">
+    <img class="iphone" src="https://stripe.com/img/checkout/marketing/hero/iphone.png">
     <div class="dribbble-example">
       <img class="dribbble" src="https://stripe.com/img/checkout/marketing/header-animation/header.png">
       <img class="remember-me-background" src="https://stripe.com/img/checkout/marketing/header-animation/bottom.png">
@@ -33,6 +34,5 @@
     </div>
   </form>
   <script src="index.js"></script>
-  <script src="animate-button.js"></script>
 </body>
 </html>
