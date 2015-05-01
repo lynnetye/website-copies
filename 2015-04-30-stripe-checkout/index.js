@@ -1,6 +1,7 @@
 $(document).ready(function(){
   var text = "This is a test string.",
-      $displayText = $('.text-box');
+      $displayText = $('.text-box'),
+      $showMeButton = $('.show-me-button');
 
   function typeInInput($input, text){
     var string = '',
@@ -15,6 +16,16 @@ $(document).ready(function(){
     }
 
   };
-
   typeInInput($displayText, text);
+});
+
+$(document).ready(function(){
+  var $showMeButton = $('.show-me-button');
+
+  $showMeButton.on('click', function(event){
+    event.preventDefault();
+
+    debugger
+    // $showMeButton.animate({top: 200px});
+  })
 });

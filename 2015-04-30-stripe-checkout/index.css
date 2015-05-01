@@ -34,6 +34,7 @@ article {
   letter-spacing: 1px;
   justify-content: center;
   padding: 230px 0px;
+  text-align: center;
   width: 50%;
 }
 
@@ -47,10 +48,13 @@ article > h1 {
 }
 
 article > p {
-  font-size: 28px;
+  color: #c5b3cb;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 150%;
 }
 
-button {
+.show-me-button {
   background-color: rgba(17,18,57,0.4);
   border: none;
   border-radius: 50px;
@@ -58,6 +62,7 @@ button {
   font-size: 16px;
   font-weight: 300;
   height: 40px;
+  cursor: pointer;
   letter-spacing: 1px;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
   width: 150px;
@@ -150,9 +155,9 @@ div.dribbble-example > p.form-remember-me {
   top: 347px;
 }
 
-
 @media screen and (max-width: 800px) {
   form > div.dribbble-example {
     display: none;
   }
 }
+
