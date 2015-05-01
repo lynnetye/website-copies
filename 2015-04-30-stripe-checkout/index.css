@@ -26,14 +26,11 @@ nav > p {
 }
 
 article {
-  align-items: center;
   color: white;
-  display: flex;
-  flex-direction: column;
   font-weight: 300;
   letter-spacing: 1px;
-  justify-content: center;
-  padding: 230px 0px;
+  margin: 250px 0px;
+  padding-top: 80px;
   text-align: center;
   width: 50%;
 }
@@ -42,6 +39,7 @@ article > h1,
 article > p {
   margin: 20px auto;
   position: relative;
+  width: 350px;
 }
 
 article > h1 {
@@ -88,26 +86,19 @@ article > p {
 }
 
 .iphone {
-  bottom: 120px;
+  bottom: 100px;
   position: absolute;
-  right: 20px;
+  left: 290px;
 }
 
 form {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-top: 200px;
   width: 50%;
   position: relative;
 }
 
 form > div.dribbble-example {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   height: 500px;
-  justify-content: center;
   padding: 50px;
   position: relative;
 }
@@ -121,6 +112,11 @@ form input.text-box {
 .dribbble {
   position: absolute;
   top: 18px;
+}
+
+.remember-me-background {
+  position: absolute;
+  bottom: 100px;
 }
 
 .empty-form {
@@ -163,9 +159,4 @@ div.dribbble-example > p.form-remember-me {
   top: 347px;
 }
 
-@media screen and (max-width: 800px) {
-  form > div.dribbble-example {
-    display: none;
-  }
-}
 
