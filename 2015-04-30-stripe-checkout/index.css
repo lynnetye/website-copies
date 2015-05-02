@@ -133,7 +133,7 @@ form input.text-box {
 
 div.dribbble-example > p {
   color: gray;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1px;
   position: absolute;
 }
@@ -202,6 +202,14 @@ div.dribbble-example > img.submission-successful {
   position: absolute;
   top: 530px;
 }
+
+div.dribbble-example > img.visa-credit-card {
+  opacity: 0;
+  position: absolute;
+  right: 100px;
+  top: 254px;
+}
+
 
 /*SLIDE TWO*/
 article.slide-2.part-1,

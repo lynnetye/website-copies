@@ -61,7 +61,8 @@ function fillOutFormDemo(){
   var $email = $('p.form-email'),
       $cardNumber = $('p.form-card-number'),
       $mmYY = $('p.form-mm-yy'),
-      $CVC = $('p.form-cvc');
+      $CVC = $('p.form-cvc'),
+      $visaCC = $('img.visa-credit-card');
       // arrayOfInputs = [$email, $cardNumber, $mmYY, $CVC];
 
   setTimeout(function(){
@@ -70,6 +71,7 @@ function fillOutFormDemo(){
 
   setTimeout(function(){
     typeInInput($cardNumber, '4242 4242 4242 4242');
+    $visaCC.animate({opacity: '1', right: '80px'}, 800);
   }, 3000); //3000
 
   setTimeout(function(){
@@ -82,7 +84,7 @@ function fillOutFormDemo(){
 
   setTimeout(function(){
     showSlideTwoRightText();
-  }, 6500); //7000
+  }, 6500); //6500
 };
 
 // part III : show right text
@@ -109,7 +111,7 @@ function storeMobilePhoneNumber(){
     $mobilePhoneForm.animate({opacity: '1'}, 500, function(){
       $phoneNumber.removeClass('hide');
       setTimeout(function(){
-        typeInInput($phoneNumber, '(607) 351-6384');
+        typeInInput($phoneNumber, '(607) 351 - 6384');
       }, 0);
 
       setTimeout(function(){
