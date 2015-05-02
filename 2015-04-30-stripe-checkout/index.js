@@ -71,7 +71,7 @@ function fillOutFormDemo(){
 
   setTimeout(function(){
     typeInInput($cardNumber, '4242 4242 4242 4242');
-    $visaCC.animate({opacity: '1', right: '80px'}, 800);
+    $visaCC.animate({opacity: '1', left: '270px'}, 800);
   }, 3000); //3000
 
   setTimeout(function(){
@@ -105,7 +105,8 @@ function storeMobilePhoneNumber(){
       $mobilePhoneForm = $('.mobile-phone-form'),
       $phoneNumber = $('p.form-phone-number'),
       $submitFormAnimation = $('div.submit-form-button-animation'),
-      $submissionSuccessful = $('img.submission-successful');
+      $submissionSuccessful = $('img.submission-successful'),
+      $dribbbleExample = $('div.dribbble-example');
 
   $formBackground.animate({bottom: '0px'}, 500, function(){
     $mobilePhoneForm.animate({opacity: '1'}, 500, function(){
@@ -129,6 +130,13 @@ function storeMobilePhoneNumber(){
         $submissionSuccessful.animate({opacity: '1'}, 200);
       }, 2300);
 
+      setTimeout(function(){
+        $dribbbleExample.addClass('slide-down');
+      }, 2500)
+
+      setTimeout(function(){
+        $dribbbleExample.addClass('hide');
+      }, 3300)
     });
   })
 };
