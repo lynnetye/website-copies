@@ -11,7 +11,7 @@ function typeInInput($input, text){
         'letter-spacing': '0'
       });
       x++;
-    }, 100 * i);
+    }, 100 * i); //100 * i
   }
 };
 
@@ -57,7 +57,6 @@ function playSlideTwo(){
 };
 
 // PART II : demo form
-
 function fillOutFormDemo(){
   var $email = $('p.form-email'),
       $cardNumber = $('p.form-card-number'),
@@ -67,17 +66,67 @@ function fillOutFormDemo(){
 
   setTimeout(function(){
     typeInInput($email, 'lynnetye@gmail.com');
-  }, 500);
+  }, 500); //500
 
   setTimeout(function(){
     typeInInput($cardNumber, '4242 4242 4242 4242');
-  }, 3000);
+  }, 3000); //3000
 
   setTimeout(function(){
     typeInInput($mmYY, '10/16');
-  }, 5000);
+  }, 5000); //5000
 
   setTimeout(function(){
     typeInInput($CVC, '123');
-  }, 6000);
+  }, 6000); //6000
+
+  setTimeout(function(){
+    showSlideTwoRightText();
+  }, 6500); //7000
+};
+
+// part III : show right text
+function showSlideTwoRightText(){
+  $textPartTwo.removeClass('hide');
+  $textPartTwo.children().removeClass('hide');
+  $textPartTwo.animate({top: '0px', opacity: '1'}, '2s', function(){
+    var $checkRememberMe = $('img.check-remember-me-button');
+
+    $checkRememberMe.animate({opacity: '1'}, '.5s', function(){
+      storeMobilePhoneNumber();
+    });
+  });
+};
+
+function storeMobilePhoneNumber(){
+  var $formBackground = $('img.dribbble-account-background'),
+      $mobilePhoneForm = $('.mobile-phone-form'),
+      $phoneNumber = $('p.form-phone-number'),
+      $submitFormAnimation = $('div.submit-form-button-animation'),
+      $submissionSuccessful = $('img.submission-successful');
+
+  $formBackground.animate({bottom: '0px'}, 500, function(){
+    $mobilePhoneForm.animate({opacity: '1'}, 500, function(){
+      $phoneNumber.removeClass('hide');
+      setTimeout(function(){
+        typeInInput($phoneNumber, '(607) 351-6384');
+      }, 0);
+
+      setTimeout(function(){
+        console.log('button clicked');
+        $submitFormAnimation.animate({opacity: '1'}, 500);
+      }, 1500);
+
+      setTimeout(function(){
+        console.log('show green');
+        $submitFormAnimation.css({'background-position': '0px 37px'});
+      }, 2200);
+
+      setTimeout(function(){
+        console.log('success!');
+        $submissionSuccessful.animate({opacity: '1'}, 200);
+      }, 2300);
+
+    });
+  })
 };

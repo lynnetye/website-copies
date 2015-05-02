@@ -120,7 +120,7 @@ form input.text-box {
   top: 18px;
 }
 
-.remember-me-background {
+.dribbble-account-background {
   position: absolute;
   bottom: 100px;
 }
@@ -165,8 +165,47 @@ div.dribbble-example > p.form-remember-me {
   top: 347px;
 }
 
+div.dribbble-example > p.form-phone-number {
+  left: 120px;
+  top: 474px;
+}
+
+div.dribbble-example > img.check-remember-me-button {
+  left: 94px;
+  opacity: 0;
+  position: absolute;
+  top: 344px;
+}
+
+div.dribbble-example > img.mobile-phone-form {
+  left: 85px;
+  opacity: 0;
+  position: absolute;
+  top: 372px;
+}
+
+div.dribbble-example > div.submit-form-button-animation {
+  background: url('https://stripe.com/img/checkout/marketing/header-animation/pay-button.png');
+  background-size: 228px 76px;
+  height: 37px;
+  left: 86px;
+  opacity: 0;
+  position: absolute;
+  top: 527px;
+  width: 228px;
+}
+
+div.dribbble-example > img.submission-successful {
+  height: 30px;
+  left: 184px;
+  opacity: 0;
+  position: absolute;
+  top: 530px;
+}
+
 /*SLIDE TWO*/
-article.slide-2.part-1 {
+article.slide-2.part-1,
+article.slide-2.part-2 {
   line-height: 40px;
   text-align: left;
   left: 10%;
@@ -177,16 +216,30 @@ article.slide-2.part-1 {
 }
 
 article.slide-2.part-1 > h1,
-article.slide-2.part-1 > p {
+article.slide-2.part-1 > p,
+article.slide-2.part-2 > h1,
+article.slide-2.part-2 > p {
   width: 100%;
 }
 
-article.slide-2.part-1 > h1 {
+article.slide-2.part-1 > h1,
+article.slide-2.part-2 > h1 {
   font-size: 30px;
+  font-weight: 400;
 }
 
-article.slide-2.part-1 > p {
+article.slide-2.part-1 > p,
+article.slide-2.part-2 > p {
   font-size: 22px;
+}
+
+article.slide-2.part-2 > h1,
+article.slide-2.part-2 > p {
+  color: rgba(10,7,43,0.9);
+}
+
+article.slide-2.part-2 {
+  left: 70%;
 }
 
 .hide {
