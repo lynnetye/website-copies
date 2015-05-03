@@ -232,14 +232,16 @@ article.slide-2.part-2 > p {
 
 article.slide-2.part-1 > h1,
 article.slide-2.part-2 > h1,
-article.slide-3 > h1 {
+article.slide-3 > h1,
+article.slide-4 > h1 {
   font-size: 30px;
   font-weight: 400;
 }
 
 article.slide-2.part-1 > p,
 article.slide-2.part-2 > p,
-article.slide-3 > p {
+article.slide-3 > p,
+article.slide-4 > p {
   font-size: 22px;
 }
 
@@ -343,6 +345,53 @@ article.slide-3 > p {
   0% {top: 310px;}
   25% {top: 290px;}
   100% {top: 800px;}
+}
+
+/*SLIDE FOUR*/
+article.slide-4 {
+  text-align: left;
+}
+
+article.slide-4 > h1,
+article.slide-4 > p {
+  left: 100px;
+  opacity: 0;
+  top: 0px;
+  width: 400px;
+}
+
+div.slide-4-iphone {
+  left: 50px;
+  position: relative;
+  top: 650px;
+}
+
+.iphone-5-background {
+  left: 490px;
+  position: absolute;
+  top: -230px;
+  width: 300px;
+}
+
+.iphone-time {
+  left: 512px;
+  position: absolute;
+  top: -144px;
+  width: 258px;
+}
+
+.humble-bundle-banner {
+  position: absolute;
+  width: 259px;
+  top: -92px;
+  left: 511px;
+}
+
+.humble-bundle-form {
+  left: 511px;
+  position: absolute;
+  top: 17px;
+  width: 259px;
 }
 
 .hide {

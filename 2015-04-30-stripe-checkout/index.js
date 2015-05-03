@@ -152,6 +152,7 @@ function showTextImages(){
       }, 1500);
       setTimeout(function(){
         showSuccessfulSubmit($('.patreon'), 'slide-three-slide-down');
+        transitionTextToSlideFour();
       }, 2000);
     }
   }, 500);
@@ -184,4 +185,24 @@ function showSuccessfulSubmit($companyExample, addClassName){
   setTimeout(function(){
     $companyExample.addClass('hide');
   }, 3300);
+};
+
+function transitionTextToSlideFour(){
+  $('.slide-3 > h1, .slide-3 > p').delay(3000).fadeOut();
+  $('.slide-2.part-2').delay(3000).fadeIn();
+  setTimeout(function(){
+    playSlideFour();
+  }, 4000);
+};
+
+function playSlideFour(){
+  var slideFour = $('.slide-4'),
+      slideFourText = $('.slide-4').children(),
+      iphoneExample = $('.slide-4 > .slide-4-iphone');
+
+  slideFour.removeClass('hide');
+  slideFourText.animate({left: '-50px', opacity: '1'}, 1000);
+  $('.slide-2.part-2').fadeOut();
+  iphoneExample.removeClass('hide');
+  iphoneExample.animate({top: '-130px'}, 500);
 };
