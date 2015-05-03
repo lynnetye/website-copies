@@ -103,10 +103,7 @@ function showSlideTwoRightText(){
 function storeMobilePhoneNumber(){
   var $formBackground = $('img.dribbble-account-background'),
       $mobilePhoneForm = $('.mobile-phone-form'),
-      $phoneNumber = $('p.form-phone-number'),
-      $submitFormAnimation = $('div.submit-form-button-animation'),
-      $submissionSuccessful = $('img.submission-successful'),
-      $dribbbleExample = $('div.dribbble-example');
+      $phoneNumber = $('p.form-phone-number');
 
   $formBackground.animate({bottom: '0px'}, 500, function(){
     $mobilePhoneForm.animate({opacity: '1'}, 500, function(){
@@ -115,29 +112,8 @@ function storeMobilePhoneNumber(){
         typeInInput($phoneNumber, '(607) 351 - 6384');
       }, 0);
 
-      setTimeout(function(){
-        console.log('button clicked');
-        $submitFormAnimation.animate({opacity: '1'}, 500);
-      }, 1500);
-
-      setTimeout(function(){
-        console.log('show green');
-        $submitFormAnimation.css({'background-position': '0px 37px'});
-      }, 2200);
-
-      setTimeout(function(){
-        console.log('success!');
-        $submissionSuccessful.animate({opacity: '1'}, 200);
-      }, 2300);
-
-      setTimeout(function(){
-        $dribbbleExample.addClass('slide-down');
-      }, 2500)
-
-      setTimeout(function(){
-        $dribbbleExample.addClass('hide');
-        playSlideThree();
-      }, 3300)
+      showSuccessfulSubmit($('.dribbble-example'), 'slide-down');
+      setTimeout(function(){ playSlideThree(); }, 3300);
     });
   })
 };
@@ -164,10 +140,48 @@ function showTextImages(){
       counter = 0;
 
   var runDisplay = setInterval(function(){
-    $listOfImages[counter].animate({bottom: '28%', opacity: '1'}, 1000);
+    $listOfImages[counter].animate({top: '310px', opacity: '1'}, 1000);
     counter++;
     if (counter >= $listOfImages.length) {
       clearInterval(runDisplay);
+      setTimeout(function(){
+        showSuccessfulSubmit($('.chocolat'), 'slide-three-slide-down');
+      }, 1000);
+      setTimeout(function(){
+        showSuccessfulSubmit($('.feedly'), 'slide-three-slide-down');
+      }, 1500);
+      setTimeout(function(){
+        showSuccessfulSubmit($('.patreon'), 'slide-three-slide-down');
+      }, 2000);
     }
   }, 500);
+};
+
+function showSuccessfulSubmit($companyExample, addClassName){
+  var $companySubmitAnimation = $companyExample.find('div.submit-form-button-animation'),
+      $companySubmissionSuccessful = $companyExample.find('img.submission-successful');
+
+  setTimeout(function(){
+    console.log('button clicked');
+    $companySubmitAnimation.animate({opacity: '1'}, 500);
+  }, 1500);
+
+  setTimeout(function(){
+    console.log('show green');
+    $companySubmitAnimation.css({'background-position': '0px 37px'});
+  }, 2200);
+
+  setTimeout(function(){
+    console.log('success!');
+    $companySubmissionSuccessful.animate({opacity: '1'}, 200);
+  }, 2300);
+
+  setTimeout(function(){
+    console.log('make disappear');
+    $companyExample.addClass(addClassName);
+  }, 2500);
+
+  setTimeout(function(){
+    $companyExample.addClass('hide');
+  }, 3300);
 };

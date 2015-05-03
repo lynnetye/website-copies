@@ -281,11 +281,9 @@ article.slide-3 > p {
   width: 600px;
 }
 
-.chocolat,
-.feedly,
-.patreon {
+.rapid-checkout-example {
   background: url('https://stripe.com/img/checkout/marketing/header-animation/logged-in.png');
-  bottom: 18%;
+  top: 400px;
   height: 380px; /*23.8em*/
   opacity: 0;
   position: absolute;
@@ -307,16 +305,44 @@ article.slide-3 > p {
   left: 66%;
 }
 
-.chocolat > img,
-.feedly > img,
-.patreon > img {
+.rapid-checkout-example > img {
   position: absolute;
 }
 
-.chocolat > submit-form-button-animation,
-.feedly > submit-form-button-animation,
-.patreon > submit-form-button-animation {
+.rapid-checkout-example > submit-form-button-animation {
   position: absolute;
+}
+
+.rapid-checkout-example > div.submit-form-button-animation {
+  background: url('https://stripe.com/img/checkout/marketing/header-animation/pay-button.png');
+  background-size: 228px 76px;
+  background-position: 0px 0px;
+  height: 37px;
+  left: 36px;
+  opacity: 0;
+  position: absolute;
+  top: 308px;
+  width: 228px;
+}
+
+.rapid-checkout-example > img.submission-successful {
+  height: 30px;
+  left: 135px;
+  opacity: 0;
+  position: absolute;
+  top: 311px;
+}
+
+.slide-three-slide-down {
+  -webkit-animation-name: slide-three-slide-down;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes slide-three-slide-down {
+  0% {top: 310px;}
+  25% {top: 290px;}
+  100% {top: 800px;}
 }
 
 .hide {
