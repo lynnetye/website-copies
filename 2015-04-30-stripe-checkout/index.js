@@ -4,7 +4,7 @@ function typeInInput($input, text){
 
   for (var i = 0; i < text.length; i++){
     setTimeout(function (){
-      string = string + text[x];
+      string += text[x];
       $input.text(string);
       $input.css({
         'color':'black',
@@ -67,24 +67,24 @@ function fillOutFormDemo(){
 
   setTimeout(function(){
     typeInInput($email, 'lynnetye@gmail.com');
-  }, 500); //500
+  }, 0); //500
 
   setTimeout(function(){
     typeInInput($cardNumber, '4242 4242 4242 4242');
     $visaCC.animate({opacity: '1', left: '270px'}, 800);
-  }, 3000); //3000
+  }, 00); //3000
 
   setTimeout(function(){
     typeInInput($mmYY, '10/16');
-  }, 5000); //5000
+  }, 00); //5000
 
   setTimeout(function(){
     typeInInput($CVC, '123');
-  }, 6000); //6000
+  }, 00); //6000
 
   setTimeout(function(){
     showSlideTwoRightText();
-  }, 6500); //6500
+  }, 00); //6500
 };
 
 // part III : show right text
@@ -136,7 +136,38 @@ function storeMobilePhoneNumber(){
 
       setTimeout(function(){
         $dribbbleExample.addClass('hide');
+        playSlideThree();
       }, 3300)
     });
   })
+};
+
+function playSlideThree(){
+  var $slideTwo = $('article.slide-2'),
+      $slideThree = $('article.slide-3'),
+      $slideThreeH1 = $slideThree.children('h1'),
+      $slideThreeP = $slideThree.children('p');
+
+  $slideTwo.addClass('hide');
+  $slideThree.removeClass('hide');
+  $slideThreeH1.animate({top: '0px', opacity: '1'}, 1000);
+  $slideThreeP.animate({top: '0px', opacity: '1'}, 1000);
+
+  showTextImages();
+};
+
+function showTextImages(){
+  var $chocolat = $('.chocolat'),
+      $feedly = $('.feedly'),
+      $patreon = $('.patreon'),
+      $listOfImages = [$chocolat, $feedly, $patreon],
+      counter = 0;
+
+  var runDisplay = setInterval(function(){
+    $listOfImages[counter].animate({bottom: '28%', opacity: '1'}, 1000);
+    counter++;
+    if (counter >= $listOfImages.length) {
+      clearInterval(runDisplay);
+    }
+  }, 500);
 };
