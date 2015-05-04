@@ -67,24 +67,24 @@ function fillOutFormDemo(){
 
   setTimeout(function(){
     typeInInput($email, 'lynnetye@gmail.com');
-  }, 0); //500
+  }, 500); //500
 
   setTimeout(function(){
     typeInInput($cardNumber, '4242 4242 4242 4242');
     $visaCC.animate({opacity: '1', left: '270px'}, 800);
-  }, 00); //3000
+  }, 3000); //3000
 
   setTimeout(function(){
     typeInInput($mmYY, '10/16');
-  }, 00); //5000
+  }, 5000); //5000
 
   setTimeout(function(){
     typeInInput($CVC, '123');
-  }, 00); //6000
+  }, 6000); //6000
 
   setTimeout(function(){
     showSlideTwoRightText();
-  }, 00); //6500
+  }, 6500); //6500
 };
 
 // part III : show right text
@@ -94,9 +94,11 @@ function showSlideTwoRightText(){
   $textPartTwo.animate({top: '0px', opacity: '1'}, '2s', function(){
     var $checkRememberMe = $('img.check-remember-me-button');
 
-    $checkRememberMe.animate({opacity: '1'}, '.5s', function(){
-      storeMobilePhoneNumber();
-    });
+    setTimeout(function(){
+      $checkRememberMe.animate({opacity: '1'}, '.5s', function(){
+        storeMobilePhoneNumber();
+      });
+    }, 1000);
   });
 };
 
