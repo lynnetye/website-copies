@@ -196,13 +196,32 @@ function transitionTextToSlideFour(){
 };
 
 function playSlideFour(){
-  var slideFour = $('.slide-4'),
-      slideFourText = $('.slide-4').children(),
-      iphoneExample = $('.slide-4 > .slide-4-iphone');
+  var $slideFour = $('.slide-4'),
+      $slideFourText = $('.slide-4').children(),
+      $iphoneExample = $('.slide-4 > .slide-4-iphone'),
+      $emailForm = $('.humble-bundle-email-input');
 
-  slideFour.removeClass('hide');
-  slideFourText.animate({left: '-50px', opacity: '1'}, 1000);
+  $slideFour.removeClass('hide');
+  $slideFourText.animate({left: '-50px', opacity: '1'}, 1000);
   $('.slide-2.part-2').fadeOut();
-  iphoneExample.removeClass('hide');
-  iphoneExample.animate({top: '-130px'}, 500);
+  $iphoneExample.removeClass('hide');
+  $iphoneExample.animate({top: '-130px'}, 500);
+  setTimeout(function(){
+    typeInInput($emailForm, 'lynnetye@gmail.com');
+    playIphoneDemo();
+  }, 2000);
+};
+
+function playIphoneDemo(){
+  var $displayWindow = $('.iphone-display-window'),
+      $emailInput = $('.humble-bundle-email-input');
+
+  setTimeout(function(){
+    $displayWindow.addClass('iphone-swipe');
+    $emailInput.fadeOut();
+  }, 1500);
+
+  setTimeout(function(){
+    $displayWindow.css('background-position', '-260px 0px, 0px 0px, 0px 30px');
+  }, 2500);
 };
