@@ -6,10 +6,6 @@ function typeInInput($input, text){
     setTimeout(function (){
       string += text[x];
       $input.text(string);
-      $input.css({
-        'color':'black',
-        'letter-spacing': '0'
-      });
       x++;
     }, 100 * i); //100 * i
   }
@@ -25,15 +21,15 @@ var $showMeButton = $('.show-me-button'),
 
 function startDemo(){
   console.log("called function");
-  $articleTitle.animate({top: '150px', opacity: '0'}, '1000');
+  $articleTitle.velocity({top: '150px', opacity: '0'}, '1000');
   $articleTitle.addClass('hide');
-  $articleBody.animate({top: '100px', opacity: '0'}, '1200');
+  $articleBody.velocity({top: '100px', opacity: '0'}, '1200');
   $articleBody.addClass('hide');
-  $showMeButton.animate({top: '80px', opacity: '0'}, '1500');
+  $showMeButton.velocity({top: '80px', opacity: '0'}, '1500');
   $showMeButton.addClass('hide');
-  $iPhone.animate({left: '150px'}, '1500', function(){
-    $(this).animate({display: 'none'})
-    $dribbbleExample.animate({left: '40%'}, '10000', function(){
+  $iPhone.velocity({left: '150px'}, '1500', function(){
+    $(this).velocity({display: 'none'})
+    $dribbbleExample.velocity({left: '40%'}, '10000', function(){
       playSlideTwo();
     });
   });
@@ -51,7 +47,7 @@ function playSlideTwo(){
   console.log('ready');
   $textPartOne.removeClass('hide');
   $textPartOne.children().removeClass('hide');
-  $textPartOne.animate({top: '0px', opacity: '1'}, '1000', function(){
+  $textPartOne.velocity({top: '0px', opacity: '1'}, '1000', function(){
     fillOutFormDemo();
   });
 };
@@ -66,19 +62,23 @@ function fillOutFormDemo(){
       // arrayOfInputs = [$email, $cardNumber, $mmYY, $CVC];
 
   setTimeout(function(){
+    $email.addClass('form-css-text');
     typeInInput($email, 'lynnetye@gmail.com');
   }, 500); //500
 
   setTimeout(function(){
+    $cardNumber.addClass('form-css-text');
     typeInInput($cardNumber, '4242 4242 4242 4242');
-    $visaCC.animate({opacity: '1', left: '270px'}, 800);
+    $visaCC.velocity({opacity: '1', left: '270px'}, 800);
   }, 3000); //3000
 
   setTimeout(function(){
+    $mmYY.addClass('form-css-text');
     typeInInput($mmYY, '10/16');
   }, 5000); //5000
 
   setTimeout(function(){
+    $CVC.addClass('form-css-text');
     typeInInput($CVC, '123');
   }, 6000); //6000
 
@@ -91,11 +91,11 @@ function fillOutFormDemo(){
 function showSlideTwoRightText(){
   $textPartTwo.removeClass('hide');
   $textPartTwo.children().removeClass('hide');
-  $textPartTwo.animate({top: '0px', opacity: '1'}, '2s', function(){
+  $textPartTwo.velocity({top: '0px', opacity: '1'}, '2s', function(){
     var $checkRememberMe = $('img.check-remember-me-button');
 
     setTimeout(function(){
-      $checkRememberMe.animate({opacity: '1'}, '.5s', function(){
+      $checkRememberMe.velocity({opacity: '1'}, '.5s', function(){
         storeMobilePhoneNumber();
       });
     }, 1000);
@@ -107,10 +107,11 @@ function storeMobilePhoneNumber(){
       $mobilePhoneForm = $('.mobile-phone-form'),
       $phoneNumber = $('p.form-phone-number');
 
-  $formBackground.animate({bottom: '0px'}, 500, function(){
-    $mobilePhoneForm.animate({opacity: '1'}, 500, function(){
+  $formBackground.velocity({bottom: '0px'}, 500, function(){
+    $mobilePhoneForm.velocity({opacity: '1'}, 500, function(){
       $phoneNumber.removeClass('hide');
       setTimeout(function(){
+        $phoneNumber.addClass('form-css-text');
         typeInInput($phoneNumber, '(607) 351 - 6384');
       }, 0);
 
@@ -128,8 +129,8 @@ function playSlideThree(){
 
   $slideTwo.addClass('hide');
   $slideThree.removeClass('hide');
-  $slideThreeH1.animate({top: '0px', opacity: '1'}, 1000);
-  $slideThreeP.animate({top: '0px', opacity: '1'}, 1000);
+  $slideThreeH1.velocity({top: '0px', opacity: '1'}, 1000);
+  $slideThreeP.velocity({top: '0px', opacity: '1'}, 1000);
 
   showTextImages();
 };
@@ -142,7 +143,7 @@ function showTextImages(){
       counter = 0;
 
   var runDisplay = setInterval(function(){
-    $listOfImages[counter].animate({top: '310px', opacity: '1'}, 1000);
+    $listOfImages[counter].velocity({top: '310px', opacity: '1'}, 1000);
     counter++;
     if (counter >= $listOfImages.length) {
       clearInterval(runDisplay);
@@ -166,7 +167,7 @@ function showSuccessfulSubmit($companyExample, addClassName){
 
   setTimeout(function(){
     console.log('button clicked');
-    $companySubmitAnimation.animate({opacity: '1'}, 500);
+    $companySubmitAnimation.velocity({opacity: '1'}, 500);
   }, 1500);
 
   setTimeout(function(){
@@ -176,7 +177,7 @@ function showSuccessfulSubmit($companyExample, addClassName){
 
   setTimeout(function(){
     console.log('success!');
-    $companySubmissionSuccessful.animate({opacity: '1'}, 200);
+    $companySubmissionSuccessful.velocity({opacity: '1'}, 200);
   }, 2300);
 
   setTimeout(function(){
@@ -204,11 +205,12 @@ function playSlideFour(){
       $emailForm = $('.humble-bundle-email-input');
 
   $slideFour.removeClass('hide');
-  $slideFourText.animate({left: '-50px', opacity: '1'}, 1000);
+  $slideFourText.velocity({left: '-50px', opacity: '1'}, 1000);
   $('.slide-2.part-2').fadeOut();
   $iphoneExample.removeClass('hide');
-  $iphoneExample.animate({top: '-130px'}, 500);
+  $iphoneExample.velocity({top: '-130px'}, 500);
   setTimeout(function(){
+    $emailForm.addClass('form-css-text');
     typeInInput($emailForm, 'lynnetye@gmail.com');
     playIphoneDemo();
   }, 2000);

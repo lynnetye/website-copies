@@ -459,4 +459,7 @@ div.iphone-display-window {
   display: none;
 }
 
-
+.form-css-text {
+  color: black !important;
+  letter-spacing: 0 !important;
+}
