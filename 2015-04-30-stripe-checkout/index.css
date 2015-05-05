@@ -7,6 +7,13 @@ body {
   width: 100%;
 }
 
+.main-content {
+  margin: 0px auto;
+  margin-top: 80px;
+  min-width: 780px;
+  position: relative;
+}
+
 @media screen and (max-width: 1340px) {
   body {
     background-size: inherit;
@@ -23,20 +30,46 @@ nav {
 nav > p {
   color: white;
   display: inline-block;
-  padding: 30px;
+  padding: 25px;
+}
+
+.left-half,
+.right-half {
+  width: 46%;
+}
+
+.right-half {
+  left: 50%;
+  position: relative;
+}
+
+.left-third,
+.center-third,
+.right-third {
+  width: 33%;
+}
+
+.center-third {
+  left: 33%;
+  position: relative;
+}
+
+.right-third {
+  left: 66%;
+  position: relative;
 }
 
 /*SLIDE ONE*/
 article {
   color: white;
   font-weight: 300;
-  left: 20%;
   letter-spacing: 1px;
-  margin: 250px auto;
-  padding-top: 80px;
   text-align: center;
   position: absolute;
-  width: 30%;
+}
+
+article.slide-1 {
+  margin: 125px auto;
 }
 
 article > h1,
@@ -89,45 +122,29 @@ article > p {
   100% {left: 0;}
 }
 
+.dribbble-example {
+  top: 30px;
+}
+
 .iphone {
-  bottom: 100px;
+  top: 60px;
   position: absolute;
-  left: 290px;
-}
-
-form {
-  margin-top: 200px;
-  left: 50%;
-  width: 30%;
-  position: absolute;
-}
-
-form > div.dribbble-example {
-  height: 500px;
-  padding: 50px;
-  position: relative;
-}
-
-form input.text-box {
-  margin: 20px 0px;
-  padding: 10px;
-  width: 200px;
+  left: 240px;
 }
 
 .dribbble {
   position: absolute;
-  top: 18px;
+  top: -31px;
 }
 
 .dribbble-account-background {
   position: absolute;
-  bottom: 100px;
 }
 
 .empty-form {
   position: absolute;
-  top: 190px;
-  left: 85px;
+  top: 150px;
+  left: 35px;
 }
 
 div.dribbble-example > p {
@@ -138,30 +155,30 @@ div.dribbble-example > p {
 }
 
 div.dribbble-example > p.form-email {
-  left: 120px;
-  top: 201px;
+  left: 73px;
+  top: 162px;
 }
 
 div.dribbble-example > p.form-card-number {
-  left: 120px;
-  top: 256px;
+  left: 73px;
+  top: 217px;
 }
 
 div.dribbble-example > p.form-mm-yy {
-  left: 120px;
-  top: 292px;
+  left: 73px;
+  top: 253px;
 }
 
 div.dribbble-example > p.form-cvc {
-  left: 230px;
-  top: 292px;
+  left: 183px;
+  top: 253px;
 }
 
 div.dribbble-example > p.form-remember-me {
   color: #575757;
   letter-spacing: 0px;
-  left: 120px;
-  top: 347px;
+  left: 70px;
+  top: 308px;
 }
 
 div.dribbble-example > p.form-phone-number {
@@ -175,17 +192,17 @@ div.dribbble-example > .placeholder-form-text {
 }
 
 div.dribbble-example > img.check-remember-me-button {
-  left: 94px;
+  /*left: 94px;*/
   opacity: 0;
   position: absolute;
-  top: 344px;
+  /*top: 344px;*/
 }
 
 div.dribbble-example > img.mobile-phone-form {
-  left: 85px;
+  /*left: 85px;*/
   opacity: 0;
   position: absolute;
-  top: 372px;
+  /*top: 372px;*/
 }
 
 div.dribbble-example > div.submit-form-button-animation {
@@ -210,8 +227,8 @@ div.dribbble-example > img.submission-successful {
 div.dribbble-example > img.visa-credit-card {
   opacity: 0;
   position: absolute;
-  left: 250px;
-  top: 254px;
+  left: 200px;
+  top: 215px;
 }
 
 
@@ -220,11 +237,8 @@ article.slide-2.part-1,
 article.slide-2.part-2 {
   line-height: 40px;
   text-align: left;
-  left: 10%;
   opacity: 0;
-  top: 100px;
   width: 400px;
-  z-index: -1;
 }
 
 article.slide-2.part-1 > h1,

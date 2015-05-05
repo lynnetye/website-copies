@@ -16,29 +16,29 @@ var $showMeButton = $('.show-me-button'),
     $articleTitle = $('article.slide-1 > h1'),
     $articleBody = $('article.slide-1 > p'),
     $iPhone = $('.iphone'),
-    $dribbbleExample = $('.dribbble-example').closest('form');
+    $dribbbleExample = $('.dribbble-example');
 
 function startDemo() {
   $articleTitle
-    .velocity({ transform: 'translateY(150px)', opacity: '0' }, 1000)
-    .addClass('hide');
+    .velocity({ translateY: '150px', opacity: '0' }, 500);
 
   $articleBody
-    .velocity({ top: '100px', opacity: '0' }, 1200)
-    .addClass('hide');
+    .velocity({ translateY: '80px', opacity: '0' }, 600);
 
   $showMeButton
-    .velocity({ top: '80px', opacity: '0' }, 1500)
-    .addClass('hide');
+    .velocity({ translateY: '60px', opacity: '0' }, 700);
 
-  $iPhone.velocity({ left: '150px' }, 1500, function () {
+  $iPhone.velocity({ left: '30%' }, 1000, function () {
     $(this).css({ display: 'none' });
 
-    $dribbbleExample.velocity({ left: '40%' }, 1000, function () {
+    $dribbbleExample.velocity({ translateX: '-150px' }, 800, function () {
+      $articleTitle.addClass('hide');
+      $articleBody.addClass('hide');
+      $showMeButton.addClass('hide');
+
       playSlideTwo();
     });
   });
-
 };
 
 // SLIDE TWO
@@ -51,199 +51,197 @@ var $textPartOne = $('.slide-2.part-1'),
 function playSlideTwo() {
   $textPartOne
     .removeClass('hide')
-    .children()
-      .removeClass('hide')
-      .velocity({ top: '0px', opacity: '1' }, 1000, function() {
-        fillOutFormDemo();
-      });
-};
-
-// PART II : demo form
-function fillOutFormDemo(){
-  var $email = $('p.form-email'),
-      $cardNumber = $('p.form-card-number'),
-      $mmYY = $('p.form-mm-yy'),
-      $CVC = $('p.form-cvc'),
-      $visaCC = $('img.visa-credit-card');
-      // arrayOfInputs = [$email, $cardNumber, $mmYY, $CVC];
-
-  setTimeout(function(){
-    $email.removeClass('placeholder-form-text');
-    typeInInput($email, 'lynnetye@gmail.com');
-  }, 500); //500
-
-  setTimeout(function(){
-    $cardNumber.removeClass('placeholder-form-text');
-    typeInInput($cardNumber, '4242 4242 4242 4242');
-    $visaCC.velocity({opacity: '1', left: '270px'}, 800);
-  }, 3000); //3000
-
-  setTimeout(function(){
-    $mmYY.removeClass('placeholder-form-text');
-    typeInInput($mmYY, '10/16');
-  }, 5000); //5000
-
-  setTimeout(function(){
-    $CVC.removeClass('placeholder-form-text');
-    typeInInput($CVC, '123');
-  }, 6000); //6000
-
-  setTimeout(function(){
-    showSlideTwoRightText();
-  }, 6500); //6500
-};
-
-// part III : show right text
-function showSlideTwoRightText(){
-  $textPartTwo
-    .removeClass('hide')
-    .children()
-      .removeClass('hide')
-      .end()
-    .velocity({ top: '0px', opacity: '1' }, 2000, function() {
-      var $checkRememberMe = $('img.check-remember-me-button');
-
-      setTimeout(function() {
-        $checkRememberMe.velocity({ opacity: '1' }, 500, function() {
-          storeMobilePhoneNumber();
-        });
-      }, 1000);
+    .velocity({ opacity: 1 }, 1000, function() {
+      fillOutFormDemo();
     });
 };
 
-function storeMobilePhoneNumber() {
-  var $formBackground = $('img.dribbble-account-background'),
-      $mobilePhoneForm = $('.mobile-phone-form'),
-      $phoneNumber = $('p.form-phone-number');
+// // PART II : demo form
+// function fillOutFormDemo(){
+//   var $email = $('p.form-email'),
+//       $cardNumber = $('p.form-card-number'),
+//       $mmYY = $('p.form-mm-yy'),
+//       $CVC = $('p.form-cvc'),
+//       $visaCC = $('img.visa-credit-card');
+//       // arrayOfInputs = [$email, $cardNumber, $mmYY, $CVC];
 
-  $formBackground.velocity({ bottom: '0px' }, 500, function(){
-    $mobilePhoneForm.velocity({ opacity: '1' }, 500, function(){
-      $phoneNumber
-        .removeClass('hide');
+//   setTimeout(function(){
+//     $email.removeClass('placeholder-form-text');
+//     typeInInput($email, 'lynnetye@gmail.com');
+//   }, 500); //500
 
-      typeInInput($phoneNumber, '(607) 351 - 6384');
+//   setTimeout(function(){
+//     $cardNumber.removeClass('placeholder-form-text');
+//     typeInInput($cardNumber, '4242 4242 4242 4242');
+//     $visaCC.velocity({ translateX: '20px', opacity: '1' }, 800);
+//   }, 3000); //3000
 
-      showSuccessfulSubmit($('.dribbble-example'), 'slide-down');
+//   setTimeout(function(){
+//     $mmYY.removeClass('placeholder-form-text');
+//     typeInInput($mmYY, '10/16');
+//   }, 5000); //5000
 
-      setTimeout(function() {
-        playSlideThree();
-      }, 3300);
-    });
-  })
-};
+//   setTimeout(function(){
+//     $CVC.removeClass('placeholder-form-text');
+//     typeInInput($CVC, '123');
+//   }, 6000); //6000
 
-function playSlideThree(){
-  var $slideTwo = $('article.slide-2'),
-      $slideThree = $('article.slide-3'),
-      $slideThreeH1 = $slideThree.children('h1'),
-      $slideThreeP = $slideThree.children('p');
+//   setTimeout(function(){
+//     // showSlideTwoRightText();
+//   }, 6500); //6500
+// };
 
-  $slideTwo.addClass('hide');
-  $slideThree.removeClass('hide');
-  $slideThreeH1.velocity({ top: '0px', opacity: '1' }, 1000);
-  $slideThreeP.velocity({ top: '0px', opacity: '1' }, 1000);
+// // part III : show right text
+// function showSlideTwoRightText(){
+//   $textPartTwo
+//     .removeClass('hide')
+//     .children()
+//       .removeClass('hide')
+//       .end()
+//     .velocity({ top: '0px', opacity: '1' }, 2000, function() {
+//       var $checkRememberMe = $('img.check-remember-me-button');
 
-  showTextImages();
-};
+//       setTimeout(function() {
+//         $checkRememberMe.velocity({ opacity: '1' }, 500, function() {
+//           storeMobilePhoneNumber();
+//         });
+//       }, 1000);
+//     });
+// };
 
-function showTextImages(){
-  var $chocolat = $('.chocolat'),
-      $feedly = $('.feedly'),
-      $patreon = $('.patreon'),
-      $listOfImages = [$chocolat, $feedly, $patreon],
-      counter = 0;
+// function storeMobilePhoneNumber() {
+//   var $formBackground = $('img.dribbble-account-background'),
+//       $mobilePhoneForm = $('.mobile-phone-form'),
+//       $phoneNumber = $('p.form-phone-number');
 
-  var runDisplay = setInterval(function() {
-    $listOfImages[counter].velocity({ top: '310px', opacity: '1' }, 1000);
+//   $formBackground.velocity({ bottom: '0px' }, 500, function(){
+//     $mobilePhoneForm.velocity({ opacity: '1' }, 500, function(){
+//       $phoneNumber
+//         .removeClass('hide');
 
-    counter++;
+//       typeInInput($phoneNumber, '(607) 351 - 6384');
 
-    if (counter >= $listOfImages.length) {
-      clearInterval(runDisplay);
+//       showSuccessfulSubmit($('.dribbble-example'), 'slide-down');
 
-      setTimeout(function() {
-        showSuccessfulSubmit($('.chocolat'), 'slide-three-slide-down');
-      }, 1000);
+//       setTimeout(function() {
+//         playSlideThree();
+//       }, 3300);
+//     });
+//   })
+// };
 
-      setTimeout(function() {
-        showSuccessfulSubmit($('.feedly'), 'slide-three-slide-down');
-      }, 1500);
+// function playSlideThree(){
+//   var $slideTwo = $('article.slide-2'),
+//       $slideThree = $('article.slide-3'),
+//       $slideThreeH1 = $slideThree.children('h1'),
+//       $slideThreeP = $slideThree.children('p');
 
-      setTimeout(function() {
-        showSuccessfulSubmit($('.patreon'), 'slide-three-slide-down');
-        transitionTextToSlideFour();
-      }, 2000);
-    }
-  }, 500);
-};
+//   $slideTwo.addClass('hide');
+//   $slideThree.removeClass('hide');
+//   $slideThreeH1.velocity({ top: '0px', opacity: '1' }, 1000);
+//   $slideThreeP.velocity({ top: '0px', opacity: '1' }, 1000);
 
-function showSuccessfulSubmit($companyExample, addClassName){
-  var $companySubmitAnimation = $companyExample.find('div.submit-form-button-animation'),
-      $companySubmissionSuccessful = $companyExample.find('img.submission-successful');
+//   showTextImages();
+// };
 
-  setTimeout(function() {
-    console.log('button clicked');
-    $companySubmitAnimation.velocity({opacity: '1'}, 500);
-  }, 1500);
+// function showTextImages(){
+//   var $chocolat = $('.chocolat'),
+//       $feedly = $('.feedly'),
+//       $patreon = $('.patreon'),
+//       $listOfImages = [$chocolat, $feedly, $patreon],
+//       counter = 0;
 
-  setTimeout(function() {
-    console.log('show green');
-    $companySubmitAnimation.css({'background-position': '0px 37px'});
-  }, 2200);
+//   var runDisplay = setInterval(function() {
+//     $listOfImages[counter].velocity({ top: '310px', opacity: '1' }, 1000);
 
-  setTimeout(function() {
-    console.log('success!');
-    $companySubmissionSuccessful.velocity({ opacity: '1' }, 200);
-  }, 2300);
+//     counter++;
 
-  setTimeout(function() {
-    console.log('make disappear');
-    $companyExample.addClass(addClassName);
-  }, 2500);
+//     if (counter >= $listOfImages.length) {
+//       clearInterval(runDisplay);
 
-  setTimeout(function() {
-    $companyExample.addClass('hide');
-  }, 3300);
-};
+//       setTimeout(function() {
+//         showSuccessfulSubmit($('.chocolat'), 'slide-three-slide-down');
+//       }, 1000);
 
-function transitionTextToSlideFour() {
-  $('.slide-3 > h1, .slide-3 > p').delay(3000).fadeOut();
-  $('.slide-2.part-2').delay(3000).fadeIn();
-  setTimeout(function(){
-    playSlideFour();
-  }, 4000);
-};
+//       setTimeout(function() {
+//         showSuccessfulSubmit($('.feedly'), 'slide-three-slide-down');
+//       }, 1500);
 
-function playSlideFour(){
-  var $slideFour = $('.slide-4'),
-      $slideFourText = $('.slide-4').children(),
-      $iphoneExample = $('.slide-4 > .slide-4-iphone'),
-      $emailForm = $('.humble-bundle-email-input');
+//       setTimeout(function() {
+//         showSuccessfulSubmit($('.patreon'), 'slide-three-slide-down');
+//         transitionTextToSlideFour();
+//       }, 2000);
+//     }
+//   }, 500);
+// };
 
-  $slideFour.removeClass('hide');
-  $slideFourText.velocity({ left: '-50px', opacity: 1 }, 1000);
-  $('.slide-2.part-2').fadeOut();
-  $iphoneExample.removeClass('hide');
-  $iphoneExample.velocity({ top: '-130px' }, 500);
+// function showSuccessfulSubmit($companyExample, addClassName){
+//   var $companySubmitAnimation = $companyExample.find('div.submit-form-button-animation'),
+//       $companySubmissionSuccessful = $companyExample.find('img.submission-successful');
 
-  setTimeout(function() {
-    $emailForm.removeClass('placeholder-form-text');
-    typeInInput($emailForm, 'lynnetye@gmail.com');
+//   setTimeout(function() {
+//     console.log('button clicked');
+//     $companySubmitAnimation.velocity({opacity: '1'}, 500);
+//   }, 1500);
 
-    playIphoneDemo();
-  }, 2000);
-};
+//   setTimeout(function() {
+//     console.log('show green');
+//     $companySubmitAnimation.css({'background-position': '0px 37px'});
+//   }, 2200);
 
-function playIphoneDemo() {
-  var $displayWindow = $('.iphone-display-window'),
-      $emailInput = $('.humble-bundle-email-input');
+//   setTimeout(function() {
+//     console.log('success!');
+//     $companySubmissionSuccessful.velocity({ opacity: '1' }, 200);
+//   }, 2300);
 
-  setTimeout(function() {
-    $displayWindow.addClass('iphone-swipe');
-    $emailInput.fadeOut();
-  }, 1500);
+//   setTimeout(function() {
+//     console.log('make disappear');
+//     $companyExample.addClass(addClassName);
+//   }, 2500);
 
-  setTimeout(function() {
-    $displayWindow.css('background-position', '-260px 0px, 0px 0px, 0px 30px');
-  }, 2500);
-};
+//   setTimeout(function() {
+//     $companyExample.addClass('hide');
+//   }, 3300);
+// };
+
+// function transitionTextToSlideFour() {
+//   $('.slide-3 > h1, .slide-3 > p').delay(3000).fadeOut();
+//   $('.slide-2.part-2').delay(3000).fadeIn();
+//   setTimeout(function(){
+//     playSlideFour();
+//   }, 4000);
+// };
+
+// function playSlideFour(){
+//   var $slideFour = $('.slide-4'),
+//       $slideFourText = $('.slide-4').children(),
+//       $iphoneExample = $('.slide-4 > .slide-4-iphone'),
+//       $emailForm = $('.humble-bundle-email-input');
+
+//   $slideFour.removeClass('hide');
+//   $slideFourText.velocity({ left: '-50px', opacity: 1 }, 1000);
+//   $('.slide-2.part-2').fadeOut();
+//   $iphoneExample.removeClass('hide');
+//   $iphoneExample.velocity({ top: '-130px' }, 500);
+
+//   setTimeout(function() {
+//     $emailForm.removeClass('placeholder-form-text');
+//     typeInInput($emailForm, 'lynnetye@gmail.com');
+
+//     playIphoneDemo();
+//   }, 2000);
+// };
+
+// function playIphoneDemo() {
+//   var $displayWindow = $('.iphone-display-window'),
+//       $emailInput = $('.humble-bundle-email-input');
+
+//   setTimeout(function() {
+//     $displayWindow.addClass('iphone-swipe');
+//     $emailInput.fadeOut();
+//   }, 1500);
+
+//   setTimeout(function() {
+//     $displayWindow.css('background-position', '-260px 0px, 0px 0px, 0px 30px');
+//   }, 2500);
+// };
