@@ -131,9 +131,9 @@ form input.text-box {
 }
 
 div.dribbble-example > p {
-  color: gray;
+  color: black;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   position: absolute;
 }
 
@@ -167,6 +167,11 @@ div.dribbble-example > p.form-remember-me {
 div.dribbble-example > p.form-phone-number {
   left: 120px;
   top: 474px;
+}
+
+div.dribbble-example > .placeholder-form-text {
+  color: gray;
+  letter-spacing: 1px;
 }
 
 div.dribbble-example > img.check-remember-me-button {

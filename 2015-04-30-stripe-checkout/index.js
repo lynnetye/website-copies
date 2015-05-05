@@ -68,19 +68,23 @@ function fillOutFormDemo(){
       // arrayOfInputs = [$email, $cardNumber, $mmYY, $CVC];
 
   setTimeout(function(){
+    $email.removeClass('placeholder-form-text');
     typeInInput($email, 'lynnetye@gmail.com');
   }, 500); //500
 
   setTimeout(function(){
+    $cardNumber.removeClass('placeholder-form-text');
     typeInInput($cardNumber, '4242 4242 4242 4242');
     $visaCC.velocity({opacity: '1', left: '270px'}, 800);
   }, 3000); //3000
 
   setTimeout(function(){
+    $mmYY.removeClass('placeholder-form-text');
     typeInInput($mmYY, '10/16');
   }, 5000); //5000
 
   setTimeout(function(){
+    $CVC.removeClass('placeholder-form-text');
     typeInInput($CVC, '123');
   }, 6000); //6000
 
@@ -115,8 +119,7 @@ function storeMobilePhoneNumber() {
   $formBackground.velocity({ bottom: '0px' }, 500, function(){
     $mobilePhoneForm.velocity({ opacity: '1' }, 500, function(){
       $phoneNumber
-        .removeClass('hide')
-        .addClass('form-css-text');
+        .removeClass('hide');
 
       typeInInput($phoneNumber, '(607) 351 - 6384');
 
@@ -224,7 +227,7 @@ function playSlideFour(){
   $iphoneExample.velocity({ top: '-130px' }, 500);
 
   setTimeout(function() {
-    $emailForm.addClass('form-css-text');
+    $emailForm.removeClass('placeholder-form-text');
     typeInInput($emailForm, 'lynnetye@gmail.com');
 
     playIphoneDemo();
