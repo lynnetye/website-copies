@@ -16,7 +16,6 @@ body {
 nav {
   text-align: center;
   position: absolute;
-
   overflow: hidden;
   width: 100%;
 }
@@ -402,6 +401,7 @@ div.slide-4-iphone {
   background-color: white;
   font-size: 15px;
   font-weight: 400;
+  padding: 5px;
   position: inherit;
   top: 15px;
   margin-left: 70px;
@@ -422,10 +422,6 @@ div.slide-4-iphone {
   top: 60px;
   width: 260px;
   z-index: 1;
-}
-
-.verification-code-input {
-
 }
 
 div.iphone-display-window {
