@@ -1,0 +1,18 @@
+ul.chat-list li {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+
+$active-status-size: 12px;
+$inactive-status-size: 22px;
+
+.chat-status > .status-active {
+  font-size: $active-status-size;
+}
+
+.chat-status > .status-inactive {
+  font-size: $inactive-status-size;
+}
