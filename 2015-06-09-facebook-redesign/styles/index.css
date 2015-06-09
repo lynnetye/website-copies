@@ -49,13 +49,12 @@ ul.chat-list {
   background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  width: 75px; }
+  width: 70px; }
 
 ul.chat-list li {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 5px; }
 
 .chat-status > .status-active {
