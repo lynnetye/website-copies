@@ -1,0 +1,18 @@
+.news-feed_post-actions {
+  border-bottom: 1px solid hsl(0, 0%, 30%);
+  color: hsl(0, 0%, 30%);
+  display: flex;
+  font: 100% $font;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.news-feed_post-actions {
+  li {
+    margin-left: 15px;
+  }
+
+  .post-actions-icon {
+    margin-right: 5px;
+  }
+}

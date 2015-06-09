@@ -45,13 +45,35 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-ul.chat-list {
+.header-bar {
+  display: flex;
+  background-color: #3B5998;
+  color: white;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  padding: 10px 0px; }
+
+.header-bar .header-bar_search {
+  display: flex;
+  margin-left: 100px; }
+.header-bar .header-bar_links {
+  display: flex;
+  margin-left: 400px;
+  justify-content: space-around;
+  width: 100px; }
+
+.header-bar_search .facebook-icon {
+  margin-right: 10px; }
+
+.side-bar {
+  position: absolute; }
+
+.side-bar_people {
   background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
   width: 70px; }
 
-ul.chat-list li {
+.side-bar_people li {
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -68,5 +90,33 @@ ul.chat-list li {
 
 .status-active {
   color: green; }
+
+.news-feed_post {
+  display: flex;
+  margin-top: 10px; }
+
+.news-feed_post .picture-of-poster {
+  height: 100px;
+  margin-left: 100px;
+  width: 100px; }
+.news-feed_post .news-feed_post-container {
+  margin-left: 10px; }
+.news-feed_post .news-feed_post-social-summary {
+  margin: 10px 0px; }
+.news-feed_post .news-feed_post-comment {
+  display: flex; }
+
+.news-feed_post-actions {
+  border-bottom: 1px solid #4d4d4d;
+  color: #4d4d4d;
+  display: flex;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  font-size: 14px;
+  padding: 10px; }
+
+.news-feed_post-actions li {
+  margin-left: 15px; }
+.news-feed_post-actions .post-actions-icon {
+  margin-right: 5px; }
 
 /*# sourceMappingURL=index.css.map */

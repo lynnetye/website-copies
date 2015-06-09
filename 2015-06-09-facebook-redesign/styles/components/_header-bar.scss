@@ -1,0 +1,23 @@
+.header-bar {
+  display: flex;
+  background-color: #3B5998;
+  color: white;
+  font: 100% $font;
+  padding: 10px 0px;
+}
+
+.header-bar {
+  .header-bar_search {
+    display: flex;
+    margin-left: 100px
+  }
+
+  .header-bar_links {
+    display: flex;
+    margin-left: 400px;
+    justify-content: space-around;
+    width: 100px;
+  }
+}
+
+
