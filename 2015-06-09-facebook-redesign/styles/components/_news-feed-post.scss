@@ -1,13 +1,12 @@
 .news-feed_post {
+  border: 1px solid red;
   display: flex;
-  margin-top: 10px;
 }
 
 .news-feed_post {
 
   .picture-of-poster {
     height: 100px;
-    margin-left: 100px;
     width: 100px;
   }
 
@@ -16,6 +15,9 @@
   }
 
   .news-feed_post-social-summary {
+    color: hsl(0, 0%, 30%);
+    font: 100% $font;
+    font-size: 14px;
     margin: 10px 0px;
   }
 

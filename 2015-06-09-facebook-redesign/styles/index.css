@@ -91,20 +91,32 @@ table {
 .status-active {
   color: green; }
 
+.news-feed_stream {
+  margin: 10px 100px; }
+
 .news-feed_post {
-  display: flex;
-  margin-top: 10px; }
+  border: 1px solid red;
+  display: flex; }
 
 .news-feed_post .picture-of-poster {
   height: 100px;
-  margin-left: 100px;
   width: 100px; }
 .news-feed_post .news-feed_post-container {
   margin-left: 10px; }
 .news-feed_post .news-feed_post-social-summary {
+  color: #4d4d4d;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  font-size: 14px;
   margin: 10px 0px; }
 .news-feed_post .news-feed_post-comment {
   display: flex; }
+
+.news-feed_post-comment .post-comment-input {
+  font: helvetica, arial, "lucida grande", sans-serif;
+  font-size: 14px;
+  margin-left: 10px;
+  padding-left: 15px;
+  width: 100%; }
 
 .news-feed_post-actions {
   border-bottom: 1px solid #4d4d4d;
