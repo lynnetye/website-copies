@@ -94,10 +94,10 @@ table {
 .news-feed {
   background-color: #e9eaed;
   display: flex;
-  padding: 20px 120px; }
+  padding: 20px 20px 20px 100px; }
 
 .news-feed_right-column {
-  padding: 0px 50px;
+  margin-left: 50px;
   width: 300px; }
 
 .right-column_news-feed-summary-option {
@@ -121,8 +121,7 @@ table {
 
 .right-column_people-you-may-know li {
   align-items: center;
-  display: flex;
-  margin-bottom: 15px; }
+  display: flex; }
   .right-column_people-you-may-know li div {
     font-size: 14px;
     margin-left: 10px;
@@ -141,6 +140,8 @@ table {
     .right-column_people-you-may-know li button p {
       font-weight: bold;
       margin-left: 5px; }
+.right-column_people-you-may-know li:not(:last-child) {
+  margin-bottom: 15px; }
 .right-column_people-you-may-know .people-you-may-know-title {
   color: #4d4d4d;
   font-size: 14px;
@@ -154,7 +155,8 @@ table {
   width: 100px; }
 .news-feed_post .news-feed_post-container {
   border: 1px solid #b3b3b3;
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-bottom: 50px; }
 .news-feed_post .news-feed_post-social-summary {
   color: #4d4d4d;
   font: 100% helvetica, arial, "lucida grande", sans-serif;

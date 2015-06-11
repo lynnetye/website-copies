@@ -10,7 +10,6 @@
   li {
     align-items: center;
     display: flex;
-    margin-bottom: 15px;
 
     div {
       font-size: 14px;
@@ -41,6 +40,10 @@
         margin-left: 5px;
       }
     }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
   }
 
   .people-you-may-know-title {
