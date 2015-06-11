@@ -1,0 +1,37 @@
+.profile-status,
+.event-status,
+.chat-status {
+  margin: 0px 5px;
+}
+
+.resize-icon-47x47 {
+  height: 47px;
+  margin-left: -3px;
+  width: 47px;
+}
+
+.resize-icon-37x37 {
+  height: 40px;
+  margin-bottom: 5px;
+  width: 40px;
+}
+
+.resize-icon-candycrush {
+  height: 35px;
+  margin-left: 2px;
+  margin-bottom: 5px;
+  width: 35px;
+}
+
+.side-bar-number-icon {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 70%);
+  font: 100% $font;
+  font-size: 13px;
+  padding: 1px 2px;
+}
+
+.side-bar-number-icon.empty {
+  background-color: hsl(0, 0%, 15%);
+  padding: 1px 5px;
+}

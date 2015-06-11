@@ -1,18 +1,12 @@
 $active-status-font-size: 12px;
 $inactive-status-font-size: 22px;
 
-.chat-status > .status-active {
+.status-active {
+  color: green;
   font-size: $active-status-font-size;
-}
-
-.chat-status > .status-inactive {
-  font-size: $inactive-status-font-size;
 }
 
 .status-inactive {
   color: gray;
-}
-
-.status-active {
-  color: green;
+  font-size: $inactive-status-font-size;
 }

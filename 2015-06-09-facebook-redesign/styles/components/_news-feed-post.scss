@@ -6,6 +6,7 @@
 
   .picture-of-poster {
     height: 100px;
+    min-width: 100px;
     width: 100px;
   }
 
@@ -13,6 +14,8 @@
     border: 1px solid hsl(0, 0%, 70%);
     margin-left: 10px;
     margin-bottom: 50px;
+    min-width: 960px;
+    width: 960px;
   }
 
   .news-feed_post-social-summary {

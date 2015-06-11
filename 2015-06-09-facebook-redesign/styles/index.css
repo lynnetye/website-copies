@@ -50,53 +50,99 @@ table {
   background-color: #3B5998;
   color: #e6e6e6;
   font: 100% helvetica, arial, "lucida grande", sans-serif;
-  letter-spacing: 110%;
+  justify-content: space-between;
   padding: 10px 0px; }
 
 .header-bar_search {
   display: flex;
-  margin-left: 100px; }
+  margin-left: 100px;
+  min-width: 300px; }
   .header-bar_search .facebook-icon {
     margin-right: 10px; }
 
 .header-bar_links {
   color: #e6e6e6;
   display: flex;
-  margin-left: 1000px;
   justify-content: space-around;
   width: 150px; }
 
 .side-bar {
-  position: absolute; }
-
-.side-bar_people {
-  background-color: #1a1a1a;
+  background-color: #262626;
   display: flex;
   flex-direction: column;
-  width: 70px; }
+  position: absolute; }
 
-.side-bar_people li {
+.side-bar li {
   align-items: center;
   display: flex;
   justify-content: space-around;
   padding: 5px; }
 
-.chat-status > .status-active {
-  font-size: 12px; }
+.side-bar_profile {
+  border-bottom: 1px solid #1a1a1a;
+  padding: 10px 0px; }
+  .side-bar_profile img {
+    width: 37px; }
+  .side-bar_profile i {
+    color: #666666; }
 
-.chat-status > .status-inactive {
-  font-size: 22px; }
+.side-bar_navigation li:last-child {
+  border-bottom: 1px solid #1a1a1a; }
 
-.status-inactive {
-  color: gray; }
+.side-bar_people {
+  margin-top: 10px; }
+  .side-bar_people li {
+    margin-bottom: 5px; }
+  .side-bar_people li:last-child {
+    margin-bottom: 10px; }
 
 .status-active {
-  color: green; }
+  color: green;
+  font-size: 12px; }
+
+.status-inactive {
+  color: gray;
+  font-size: 22px; }
+
+.profile-status,
+.event-status,
+.chat-status {
+  margin: 0px 5px; }
+
+.resize-icon-47x47 {
+  height: 47px;
+  margin-left: -3px;
+  width: 47px; }
+
+.resize-icon-37x37 {
+  height: 40px;
+  margin-bottom: 5px;
+  width: 40px; }
+
+.resize-icon-candycrush {
+  height: 35px;
+  margin-left: 2px;
+  margin-bottom: 5px;
+  width: 35px; }
+
+.side-bar-number-icon {
+  background-color: #141414;
+  color: #b3b3b3;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  font-size: 13px;
+  padding: 1px 2px; }
+
+.side-bar-number-icon.empty {
+  background-color: #262626;
+  padding: 1px 5px; }
 
 .news-feed {
   background-color: #e9eaed;
   display: flex;
-  padding: 20px 20px 20px 100px; }
+  padding: 20px 20px 20px 150px; }
+
+.news-feed_stream {
+  width: 1220px; }
 
 .news-feed_right-column {
   margin-left: 50px;
@@ -154,11 +200,14 @@ table {
 
 .news-feed_post .picture-of-poster {
   height: 100px;
+  min-width: 100px;
   width: 100px; }
 .news-feed_post .news-feed_post-container {
   border: 1px solid #b3b3b3;
   margin-left: 10px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  min-width: 960px;
+  width: 960px; }
 .news-feed_post .news-feed_post-social-summary {
   color: #4d4d4d;
   font: 100% helvetica, arial, "lucida grande", sans-serif;
