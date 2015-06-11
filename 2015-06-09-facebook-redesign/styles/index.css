@@ -51,11 +51,12 @@ table {
   color: #e6e6e6;
   font: 100% helvetica, arial, "lucida grande", sans-serif;
   justify-content: space-between;
-  padding: 10px 0px; }
+  left: 85px;
+  padding: 10px 100px 10px 65px;
+  position: relative; }
 
 .header-bar_search {
   display: flex;
-  margin-left: 100px;
   min-width: 300px; }
   .header-bar_search .facebook-icon {
     margin-right: 10px; }
@@ -70,13 +71,24 @@ table {
   background-color: #262626;
   display: flex;
   flex-direction: column;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
   position: absolute; }
+  .side-bar li {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px; }
 
-.side-bar li {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  padding: 5px; }
+.expanded-name {
+  color: #b3b3b3;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  width: 170px; }
+
+.expanded-name.invisible {
+  visibility: hidden;
+  width: 0px; }
 
 .side-bar_profile {
   border-bottom: 1px solid #1a1a1a;
@@ -139,7 +151,7 @@ table {
 .news-feed {
   background-color: #e9eaed;
   display: flex;
-  padding: 20px 20px 20px 150px; }
+  padding: 20px 100px 20px 180px; }
 
 .news-feed_stream {
   width: 1220px; }

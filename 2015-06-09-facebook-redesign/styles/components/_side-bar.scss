@@ -2,10 +2,9 @@
   background-color: hsl(0, 0%, 15%);
   display: flex;
   flex-direction: column;
+  font: 100% $font;
   position: absolute;
-}
 
-.side-bar {
   li {
     align-items: center;
     display: flex;
