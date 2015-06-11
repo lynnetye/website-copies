@@ -1,0 +1,51 @@
+.right-column_people-you-may-know {
+  border: 1px solid black;
+  font: 100% $font;
+  margin: 20px 0px;
+  padding: 15px 20px;
+}
+
+.right-column_people-you-may-know {
+
+  li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+
+    div {
+      font-size: 14px;
+      margin-left: 10px;
+      width: 150px;
+
+      .people-you-may-know-name {
+        font-weight: bold;
+      }
+
+      .mutual-friend {
+        color: hsl(0, 0%, 20%);
+      }
+    }
+
+    button {
+      align-items: center;
+      display: flex;
+      height: 25px;
+      width: 60px;
+
+      i {
+        color: hsl(0, 0%, 20%);
+      }
+
+      p {
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .people-you-may-know-title {
+    color: hsl(0, 0%, 30%);
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
