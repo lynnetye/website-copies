@@ -210,22 +210,25 @@ table {
 .news-feed_post {
   display: flex; }
 
-.news-feed_post .picture-of-poster {
+.news-feed_poster-photo {
   height: 100px;
   min-width: 100px;
   width: 100px; }
-.news-feed_post .news-feed_post-container {
+
+.news-feed_post-container {
   border: 1px solid #b3b3b3;
   margin-left: 10px;
   margin-bottom: 50px;
   min-width: 960px;
   width: 960px; }
-.news-feed_post .news-feed_post-social-summary {
+
+.news-feed_post-social-summary {
   color: #4d4d4d;
   font: 100% helvetica, arial, "lucida grande", sans-serif;
   font-size: 14px;
   margin: 10px 15px; }
-.news-feed_post .news-feed_post-comment {
+
+.news-feed_post-comment {
   display: flex; }
 
 .news-feed_post-comment {
