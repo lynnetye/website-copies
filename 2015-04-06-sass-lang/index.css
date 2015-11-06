@@ -1,0 +1,241 @@
+html {
+  font-family: Source Sans Pro;
+}
+
+.announcement {
+  background-color: #036;
+  padding: 18px;
+  text-align: center;
+}
+
+.announcement > p {
+  display: inline;
+  letter-spacing: .5px
+}
+
+.announcement > #blue {
+  color: #b3d4fc;
+}
+
+.announcement > #white {
+  color: white;
+  margin-left: 5px;
+}
+
+.top-bar {
+  background-image: url(images/grey-prism.svg);
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.top-bar > img {
+  display: inline-block;
+  margin: 20px 0px 0px 50px;
+  position: relative;
+  width: 10%;
+}
+
+.top-bar > .list {
+  display: inline-block;
+  position: absolute;
+  text-align: right;
+  top: 25%;
+  white-space: nowrap;
+  width: 85%;
+}
+
+.top-bar > .list > p {
+  color: #c69;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  margin-right: 30px;
+  position: relative;
+}
+
+.bottom-bar {
+  color: #808c99;
+  font-size: 80px;
+  font-weight: 300;
+  padding: 50px;
+  position: relative;
+  text-align: center;
+}
+
+.glasses {
+  position: relative;
+}
+
+.glasses > div {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 49%;
+}
+
+.glasses > .image > img {
+  padding: 50px 0px;
+  width: 80%;
+}
+
+.glasses > .text {
+  color: #699;
+  font-size: 26px;
+  line-height: 150%;
+  margin-left: 10px;
+  position: absolute;
+  right: 50px;
+  text-align: left;
+  top: 30%;
+}
+
+.pink-banner {
+  background-color: #c6538c;
+  height: 50px;
+  text-align: center;
+}
+
+.pink-banner > ul {
+  padding-top: 15px;
+}
+
+.pink-banner > ul > li {
+  color: white;
+  display: inline;
+  font-size: 20px;
+  margin: 0px 15px;
+  width: 30%;
+}
+
+.info {
+  margin: 10px 0px 60px 0px;
+  text-align: center;
+}
+
+.info > .feature {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 140%;
+  margin-left: 25px;
+  vertical-align: top;
+  width: 29%;
+}
+
+.feature > h2 {
+  color: #808c99;
+  font-family: Source Serif Pro;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.feature > p {
+  color: #484c55;
+  font-weight: 400;
+  text-align: left;
+}
+
+footer {
+  background-image: url(images/grey-prism.svg);
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+}
+
+footer > div {
+  color: #484c55;
+  display: inline-block;
+}
+
+footer > .left {
+  line-height: 120%;
+  margin: 15px auto;
+  width: 25%;
+}
+
+footer > .left > p {
+  color: #484c55;
+  font-size: 14px;
+  margin: 5px auto;
+  text-align: left;
+  top: 10px;
+}
+
+footer > .center {
+  text-align: center;
+  width: 50%;
+}
+
+footer > .center > p {
+  bottom: 30px;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px 10px;
+  position: relative;
+}
+
+footer > .right {
+  width: 20%;
+}
+
+.right {
+  position: relative;
+}
+
+footer > .right > button {
+  background-color: #eee;
+  border-radius: 5px;
+  bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  width: 180px;
+}
+
+button > i {
+  color: #4099ff;
+  margin-right: 5px;
+}
+
+@media screen and (max-width:750px) and (min-width:300px) {
+  .top-bar > .list {
+    font-size: 13px;
+  }
+  .bottom-bar {
+    font-size: 50px;
+  }
+  .glasses > .text {
+    display: none;
+  }
+  .pink-banner > ul > li {
+    font-size: 13px;
+    margin: 0px 5px
+  }
+}
+
+@media screen and (max-width:1000px) and (min-width:850px) {
+  footer > .center > p {
+    display: block;
+  }
+}
+
+@media screen and (max-width:850px) and (min-width:300px) {
+  footer > .left {
+    display: none;
+  }
+  footer > .center > p {
+    display: none;
+  }
+  footer > .right {
+    text-align: center;
+  }
+  footer > .right > button {
+    margin: 20px auto;
+    position: static;
+  }
+}

@@ -1,0 +1,12 @@
+$active-status-font-size: 12px;
+$inactive-status-font-size: 22px;
+
+.status-active {
+  color: green;
+  font-size: $active-status-font-size;
+}
+
+.status-inactive {
+  color: gray;
+  font-size: $inactive-status-font-size;
+}

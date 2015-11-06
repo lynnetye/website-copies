@@ -1,0 +1,129 @@
+html {
+ width: 100%;
+ font-family: Arial;
+ color: #335457;
+}
+
+.top-banner {
+  height: 1100px;
+  width: 100%;
+}
+
+.cloud-banner {
+  background-image: url('https://www.squareweave.com.au/app/theme/default/design/images/home/sky.jpg');
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.navigation-bar {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  width: 100%;
+}
+
+.other-headers {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px;
+}
+
+.other-headers > div {
+  padding: 0 10px;
+}
+.navigation-bar > .logo {
+  display: flex;
+  padding: 10px;
+}
+
+.navigation-bar > .logo > div {
+  padding: 10px;
+}
+
+#logo-image {
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  background-color: black;
+}
+
+.tree-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tree-image {
+  background-image: url('https://www.squareweave.com.au/app/theme/default/design/images/home/tree-logo-retina.png');
+  background-size: cover;
+  height: 425px;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 400px;
+}
+
+.tree-body > .text {
+  width: 50%;
+  font-size: 36px;
+  line-height: 120%;
+  font-family: serif;
+}
+
+.tree-body > .text > h1 {
+  padding: 200px 10px 0px 0px;
+}
+
+.tree-body > .text > h2 {
+ font-size: 18px;
+ font-style: italic;
+ padding-left: 10px;
+}
+
+.clients {
+  height: 500px;
+  width: 100%;
+  padding: 50px 0px;
+  /*border: 1px solid red;*/
+}
+
+.clients > .row1, .row2, .row3 {
+  display: flex;
+  justify-content: center;
+}
+
+.clients > div > div > img {
+  height: 140px;
+  width: 190px;
+  padding: 10px;
+}
+
+.movie-section {
+  background-image: url('https://www.squareweave.com.au/app/theme/default/design/images/fya/sea-darker.jpg');
+  background-size: cover;
+  height: 400px;
+  padding: 50px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.movie-section > div {
+  font-family: serif;
+  font-size: 80px;
+  padding: 80px 0px;
+  color: white;
+}
+
+.movie-section > #button {
+  font-size: 24px;
+  padding: 0 0;
+}
+
+
+.hire-us-section {
+  height: 400px;
+  width: 100%;
+}

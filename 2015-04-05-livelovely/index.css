@@ -1,0 +1,308 @@
+html {
+  font-family: Open Sans;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+}
+
+nav > .right-side {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.right-side > a, button {
+  padding: 10px;
+}
+
+.right-side > button {
+  background-color: #4c9fcd;
+  border: 1px solid #4c9fcd;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  height: 40px;
+}
+
+nav > .logo {
+  margin: 0px 10px;
+}
+
+.hero {
+  background-image: url('https://livelovely.com/static/images/home-page/bg-hero.jpg');
+  background-size: cover;
+  color: white;
+  font-size: 38px;
+  font-weight: 300;
+  height: 320px;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.hero > h2 {
+  letter-spacing: 3px;
+}
+
+.hero > form {
+  margin: 50px auto;
+}
+
+.hero > form > input {
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  height: 40px;
+  padding-left: 10px;
+  width: 400px;
+}
+
+.other-cities {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.other-cities > h3 {
+  color: #333;
+  font-size: 28px;
+  margin: 0px auto;
+}
+
+.other-cities > .top-row, .bottom-row {
+  display: flex;
+  justify-content: center;
+}
+
+.top-row {
+  margin-top: 50px;
+}
+
+.top-row > div > p {
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  margin-top: 200px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.bottom-row > div > p {
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  margin-top: 200px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.other-cities > div > div {
+  height: 240px;
+  margin: 10px auto;
+}
+
+.top-row, .bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sd {
+  background-image: url('https://livelovely.com/static/images/home-page/san-diego.jpg');
+  width: 250px;
+}
+
+.pa {
+  background-image: url('https://livelovely.com/static/images/home-page/philadelphia.jpg');
+  width: 250px;
+}
+
+.sf {
+  background-image: url('https://livelovely.com/static/images/home-page/san-francisco.jpg');
+  width: 450px;
+}
+
+.ny {
+  background-image: url('https://livelovely.com/static/images/home-page/new-york.jpg');
+  width: 450px;
+}
+
+.da {
+  background-image: url('https://livelovely.com/static/images/home-page/dallas-02.jpg');
+  width: 250px;
+}
+
+.px {
+  background-image: url('https://livelovely.com/static/images/home-page/phoenix-02.jpg');
+  width: 250px;
+}
+
+.other-cities > button {
+  background-color: #eee;
+  color: #666;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  height: 40px;
+  margin: 50px auto;
+  width: 150px;
+}
+
+.iphone-android {
+  background-color: #8e8f90;
+}
+
+.iphone-android > .guts {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.iphone-android > .guts > .image {
+  background-image: url('https://livelovely.com/static/images/home-page/bg-mobile-android@2x.png');
+  background-position: 0px -46px;
+  background-size: cover;
+  height:380px;
+  width: 300px;
+}
+
+.iphone-android > .guts > .text {
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-left: 50px;
+  max-width: 550px;
+}
+
+.iphone-android > .guts > .text > h1 {
+  font-size: 28px;
+  line-height: 130%;
+  margin-top: 60px;
+}
+
+.iphone-android > .guts > .text > p {
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 130%;
+}
+
+.button-links > button {
+  border: none;
+  border-radius: 5px;
+  background-color: #777;
+  color: white;
+  font-size: 12px;
+  height: 40px;
+  margin-top: 50px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.button-links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-links > button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button-links > button > .fa {
+  margin-right: 5px;
+}
+
+
+.almost-home > .company-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.company-logos {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 80px;
+}
+
+.almost-home {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.almost-home > .company-logos > img {
+  height: 30px;
+  padding: 0px 50px;
+}
+
+.almost-home > .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom > p {
+  font-size: 30px;
+  margin: 50px auto;
+}
+
+.bottom > button {
+  background-color: #4c9fcd;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  height: 40px;
+  width: 200px;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 280%;
+}
+
+footer > .top {
+  display: flex;
+  justify-content: center;
+}
+
+footer > .top > div {
+  margin-top: 50px;
+  padding: 0px 100px;
+}
+
+footer > .top > .one > img {
+  height: 30px;
+}
+
+footer > .true-footer {
+  align-items: center;
+  border-top: 1px solid #666;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 15px auto;
+}
+
+footer > .true-footer > p, img {
+  margin: 10px auto;
+}
+
+footer > .true-footer > p {
+  color: #929292;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer > .true-footer > img {
+  height: 25px;
+}

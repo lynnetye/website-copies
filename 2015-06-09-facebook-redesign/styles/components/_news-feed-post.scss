@@ -1,0 +1,29 @@
+.news-feed_post {
+  display: flex;
+}
+
+.news-feed_poster-photo {
+  height: 100px;
+  min-width: 100px;
+  width: 100px;
+}
+
+.news-feed_post-container {
+  border: 1px solid hsl(0, 0%, 70%);
+  margin-left: 10px;
+  margin-bottom: 50px;
+  min-width: 960px;
+  width: 960px;
+}
+
+.news-feed_post-social-summary {
+  color: hsl(0, 0%, 30%);
+  font: 100% $font-family;
+  font-size: 14px;
+  margin: 10px 15px;
+}
+
+.news-feed_post-comment {
+  display: flex;
+}
+

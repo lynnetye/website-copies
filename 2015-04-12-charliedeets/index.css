@@ -1,0 +1,177 @@
+body {
+  font-family: Cardo;
+  color: #555;
+}
+
+.awesome-bars {
+  position: fixed;
+}
+
+.fa {
+  color: black;
+  margin: 20px;
+}
+
+.image-section > img {
+  width: 100%;
+}
+
+.text-section {
+  margin: 50px auto;
+  text-align: left;
+  width: 800px;
+}
+
+.text-section > h1 {
+  color: black;
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 20px auto;
+}
+
+.text-section > h2 {
+  color: #999;
+  font-family: Lato;
+  font-size: 16px;
+}
+
+.text-section > p {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 50px auto;
+}
+
+.text-section > button {
+  background-color: #FF706C;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  height: 55px;
+  margin-bottom: 30px;
+  width: 180px;
+}
+
+.image-section {
+  border-top: 5px solid #EEE;
+}
+
+#song > p {
+  margin: 20px auto;
+}
+
+#song > h2 {
+  margin-bottom: 50px;
+}
+
+.contact-me .last {
+  border-bottom: 0px solid black;
+}
+
+.contact-me {
+  background-color: #303944;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto;
+  width: 90%;
+}
+
+.contact-me > .left-column, .right-column {
+  margin-top: 80px;
+  margin-bottom: 110px;
+  width: 40%;
+}
+
+.contact-me > div h1 {
+  color: white;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px auto;
+}
+
+.contact-me > div p {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #FF706C;
+  font-family: Cardo;
+  padding: 10px 0px;
+}
+
+.dribbble > img {
+  border: 5px solid rgba(255,255,255,0.1);
+  width: 40%;
+}
+
+.line {
+  background-color: rgba(255,255,255,0.1);
+  height: 4px;
+  margin: 40px auto;
+}
+
+textarea {
+  color: #888;
+  font-size: 13px;
+  padding: 10px;
+  width: 95%;
+}
+
+.email-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.email-section > textarea {
+  width: 70%;
+}
+
+.email-section > button {
+  background-color: #FF706C;
+  border: none;
+  color: white;
+  font-size: 14px;
+  height: 40px;
+  width: 20%;
+}
+
+.tweet-link > p, a {
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.tweet-link > p {
+  align-content: flex-start;
+  border-bottom: none;
+  color: rgba(255,255,255,0.7);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tweet-link a {
+  color: #FF706C;
+  text-decoration: none;
+}
+
+#twitter > .date {
+  color: #FFF;
+  font-size: 10px;
+}
+
+.dribbble > div > a {
+  color: #FF706C;
+  margin-top: 20px;
+  position: absolute;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer > p {
+  font-size: 14px;
+  padding: 40px;
+}

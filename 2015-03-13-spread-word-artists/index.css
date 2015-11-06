@@ -1,0 +1,134 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/*top banner */
+
+header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.icon {
+  background-image: url("blue-background.jpg");
+  height: 15px;
+  width: 15px;
+}
+
+.spread-the-word {
+
+}
+
+/*end of top banner*/
+
+
+/*image list section*/
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.first-layer-image {
+  background-size: cover;
+  height: 300px;
+  width: 50%;
+}
+
+.second-layer-background-text {
+  align-items: center;
+  background-color: hsla(124,81%,74%, 0);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  opacity: 0;
+  transition: background-color .5s;
+  width: 100%;
+}
+
+.second-layer-background-text > h1 {
+  padding-top: 100px;
+  transition: padding-top 1s;
+}
+
+.second-layer-background-text:hover > h1 {
+  padding-top: 120px;
+}
+
+.second-layer-background-text:hover {
+  background-color: hsla(124,81%,74%,1);
+  height: 300px;
+  opacity: .8;
+  width: 100%;
+}
+
+.second-layer-background-text:hover > * {
+  color: white;
+  font-size: 38px;
+  opacity: 1;
+  text-align: center;
+}
+
+.second-layer-background-text:hover > h2 {
+  font-size: 15px;
+}
+
+.just-text {
+  background-color: #8683E8;
+  color: white;
+  font-size: 22.5px;
+  height: 300px;
+  text-align: center;
+  width: 50%;
+}
+
+.just-text > * {
+  padding-top: 150px;
+}
+
+h3:hover {
+  border-bottom: 1px solid white;
+  display: inline-block; /* keeps border-bottom to text width*/
+  padding-bottom: 4px; /* puts space between text and border*/
+}
+
+#nomak {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/nomak.jpg");
+}
+
+#qiwu {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/qiwu.jpg");
+}
+
+#mental-abstrato {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/mental_abstrato.jpg")
+}
+
+#lady-paradox {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/lady_paradox.jpg")
+}
+
+#lucid-music {
+  background-image: url("http://spread-word.com/wp-content/uploads/2015/02/lucid_music.jpg");
+}
+
+/*end of image list section*/
+
+/*footer section*/
+
+footer {
+  align-items: center;
+  color: gray;
+  display: flex;
+  font-size: 14px;
+  height: 60px;
+  justify-content: center;
+}
+
+/*end of footer section*/

@@ -1,0 +1,14 @@
+.expanded-name {
+  color: hsl(0, 0%, 70%);
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  width: 170px;
+}
+
+.expanded-name.invisible {
+  visibility: hidden;
+  width: 0px;
+}
+
+

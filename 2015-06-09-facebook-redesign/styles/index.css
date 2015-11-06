@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.header-bar {
+  display: flex;
+  background-color: #3B5998;
+  color: #e6e6e6;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  justify-content: space-between;
+  left: 85px;
+  padding: 10px 100px 10px 65px;
+  position: relative; }
+
+.header-bar_search {
+  display: flex;
+  min-width: 300px; }
+  .header-bar_search .facebook-icon {
+    margin-right: 10px; }
+
+.header-bar_links {
+  color: #e6e6e6;
+  display: flex;
+  justify-content: space-around;
+  width: 150px; }
+
+.side-bar {
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  position: absolute; }
+  .side-bar li {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px; }
+
+.expanded-name {
+  color: #b3b3b3;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  width: 170px; }
+
+.expanded-name.invisible {
+  visibility: hidden;
+  width: 0px; }
+
+.side-bar_profile {
+  border-bottom: 1px solid #1a1a1a;
+  padding: 10px 0px; }
+  .side-bar_profile img {
+    width: 37px; }
+  .side-bar_profile i {
+    color: #666666; }
+
+.side-bar_navigation li:last-child {
+  border-bottom: 1px solid #1a1a1a; }
+
+.side-bar_people {
+  margin-top: 10px; }
+  .side-bar_people li {
+    margin-bottom: 5px; }
+  .side-bar_people li:last-child {
+    margin-bottom: 10px; }
+
+.status-active {
+  color: green;
+  font-size: 12px; }
+
+.status-inactive {
+  color: gray;
+  font-size: 22px; }
+
+.profile-status,
+.event-status,
+.chat-status {
+  margin: 0px 5px; }
+
+.resize-icon-47x47 {
+  height: 47px;
+  margin-left: -3px;
+  width: 47px; }
+
+.resize-icon-37x37 {
+  height: 40px;
+  margin-bottom: 5px;
+  width: 40px; }
+
+.resize-icon-candycrush {
+  height: 35px;
+  margin-left: 2px;
+  margin-bottom: 5px;
+  width: 35px; }
+
+.side-bar-number-icon {
+  background-color: #141414;
+  color: #b3b3b3;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  font-size: 13px;
+  padding: 1px 2px; }
+
+.side-bar-number-icon.empty {
+  background-color: #262626;
+  padding: 1px 5px; }
+
+.news-feed {
+  background-color: #e9eaed;
+  display: flex;
+  padding: 20px 100px 20px 180px; }
+
+.news-feed_stream {
+  width: 1220px; }
+
+.news-feed_right-column {
+  margin-left: 50px;
+  width: 300px; }
+
+.right-column_news-feed-summary-option {
+  display: flex;
+  padding: 10px; }
+
+.right-column_news-feed-summary {
+  border: 1px solid black;
+  font: 100% helvetica, arial, "lucida grande", sans-serif; }
+
+.right-column_news-feed-summary i {
+  width: 15px; }
+.right-column_news-feed-summary p {
+  margin-left: 20px; }
+
+.right-column_people-you-may-know {
+  border: 1px solid black;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  margin: 20px 0px;
+  padding: 15px 20px; }
+
+.right-column_people-you-may-know li {
+  align-items: center;
+  display: flex; }
+  .right-column_people-you-may-know li div {
+    font-size: 14px;
+    margin-left: 10px;
+    width: 150px; }
+    .right-column_people-you-may-know li div .people-you-may-know-name {
+      font-weight: bold; }
+    .right-column_people-you-may-know li div .mutual-friend {
+      color: #333333; }
+  .right-column_people-you-may-know li button {
+    align-items: center;
+    display: flex;
+    height: 25px;
+    width: 60px; }
+    .right-column_people-you-may-know li button i {
+      color: #333333; }
+    .right-column_people-you-may-know li button p {
+      font-weight: bold;
+      margin-left: 5px; }
+.right-column_people-you-may-know li:not(:last-child) {
+  margin-bottom: 15px; }
+.right-column_people-you-may-know .people-you-may-know-title {
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: bold; }
+
+.news-feed_post {
+  display: flex; }
+
+.news-feed_poster-photo {
+  height: 100px;
+  min-width: 100px;
+  width: 100px; }
+
+.news-feed_post-container {
+  border: 1px solid #b3b3b3;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  min-width: 960px;
+  width: 960px; }
+
+.news-feed_post-social-summary {
+  color: #4d4d4d;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  font-size: 14px;
+  margin: 10px 15px; }
+
+.news-feed_post-comment {
+  display: flex; }
+
+.news-feed_post-comment {
+  margin: 10px 15px; }
+  .news-feed_post-comment .post-comment-input {
+    font: helvetica, arial, "lucida grande", sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    padding-left: 15px;
+    width: 100%; }
+
+.news-feed_post-actions {
+  border-bottom: 1px solid #b3b3b3;
+  color: #4d4d4d;
+  display: flex;
+  font: 100% helvetica, arial, "lucida grande", sans-serif;
+  font-size: 14px;
+  padding: 15px; }
+
+.news-feed_post-actions li {
+  margin-right: 15px; }
+.news-feed_post-actions .post-actions-icon {
+  margin-right: 5px; }
+
+/*# sourceMappingURL=index.css.map */

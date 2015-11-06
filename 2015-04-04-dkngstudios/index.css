@@ -1,0 +1,177 @@
+html {
+  background: black;
+  color: rgba(255,255,255,.9);
+  font-family: Roboto;
+  font-weight: 100;
+}
+
+nav {
+  align-items: center;
+  background: #282B33;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  background-image: url('http://static1.squarespace.com/static/54b9401be4b095413a52aaa8/t/54dbb902e4b0cf15c2905244/1428090342932/?format=1500w');
+  background-size: contain;
+  height: 50px;
+  width: 220px;
+}
+
+.general {
+  font-size: 14px;
+  padding-left: 100px;
+}
+
+.general > a {
+  padding: 0px 10px;
+}
+
+section {
+  display: flex;
+  max-width: 1020px;
+  margin: 0px auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.container-1 > .blog-image {
+  background-image: url('http://static1.squarespace.com/static/54b9401be4b095413a52aaa8/54bf5289e4b028af5ebccfdd/55078b1ce4b0004ab72c0d5a/1426619082148/?format=750w');
+  background-position: -90px 0px;
+  background-size: cover;
+  height: 335px;
+  width: 335px;
+}
+
+.blog-body {
+  margin-left: 30px ;
+  text-align: left;
+  width: 500px;
+}
+
+.blog-body > .text > a {
+  display: block;
+  text-align:left;
+}
+
+.event-type {
+  font-size: 14px;
+}
+
+.title {
+  font-size: 28px;
+  padding-top: 15px;
+}
+
+.location {
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.date {
+  color: #D22D22;
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 150%;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+.buttons > .social {
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.social > a {
+  padding-right: 10px;
+}
+
+button {
+  background-color: #D22D22;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  height: 40px;
+  width: 150px;
+}
+
+.container-2 > .blog-image {
+  background-image: url('http://static1.squarespace.com/static/54b9401be4b095413a52aaa8/54bf5289e4b028af5ebccfdd/550a1b64e4b074470a9c5cce/1427137394257/');
+  background-position: 0px 0px;
+  background-size: cover;
+  height: 335px;
+  width: 335px;
+}
+
+.container-3 > .blog-image {
+  background-image: url('http://static1.squarespace.com/static/54b9401be4b095413a52aaa8/54bf5289e4b028af5ebccfdd/54d10525e4b0a33bbb20146d/1426726211531/');
+  background-position: 0px 0px;
+  background-size: cover;
+  height: 335px;
+  width: 335px;
+}
+
+.container-4 > .blog-image {
+  background-image: url('http://static1.squarespace.com/static/54b9401be4b095413a52aaa8/54bf5289e4b028af5ebccfdd/54d11a3ce4b01036e3c11df3/1426726239413/');
+  background-position: 0px 0px;
+  background-size: cover;
+  height: 335px;
+  width: 335px;
+}
+
+.container-4 {
+  padding-bottom: 100px;
+}
+
+.mailing-list {
+  background-color: #222;
+  font-size: 28px;
+  font-weight: 300;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.mailing-list > .input-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+form {
+  padding: 0px 10px;
+}
+
+form > input {
+  height: 40px;
+  padding: 0px 5px;
+  width: 180px;
+}
+
+#sign-up {
+  height: 46px;
+  width: 120px;
+}
+
+footer {
+  align-items: center;
+  background-color: #333;
+  display: flex;
+  font-size: 11px;
+  justify-content: center;
+}
+
+footer > a {
+  padding: 20px;
+}
