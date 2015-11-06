@@ -1,0 +1,54 @@
+body {
+  color: #204056;
+  font-family: Oxygen;
+}
+
+.header {
+  font-size: 28px;
+  padding: 10px;
+  text-align: center;
+  /*position: fixed;*/
+  width: 100%;
+}
+
+.sign-in-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 100px;
+}
+
+.sign-in-container > div {
+  border: 3px solid black;
+  display: flex;
+}
+
+.sign-in-container > div, form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.sign-in-container > div > a {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+form > input {
+  font-size: 16px;
+  height: 30px;
+  margin: 5px 10px;
+}
+
+form > button {
+  background-color: #f65a5b;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 30px;
+  margin: 10px;
+}
