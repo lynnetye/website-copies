@@ -1,0 +1,184 @@
+body {
+  font-family: Times;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+nav {
+  align-items: center;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding: 15px 0;
+}
+
+.nav__logo {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.nav__main-menu {
+  display: flex;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav__side-menu {
+  background-color: gray;
+  color: white;
+  display: flex;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav__side-menu li {
+  margin: 0px 3px;
+}
+
+.articles-container {
+  display: flex;
+  height: 1500px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.colunn {
+  display: flex;
+  flex-direction: column;
+}
+
+.column--center {
+  margin: 0 30px;
+}
+
+.article {
+  box-sizing: border-box;
+  padding: 10px 5px;
+  width: 400px;
+}
+
+.article__title {
+  font-size: 32px;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-weight: light;
+}
+
+.article__link-list {
+  display: flex;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.article__link-list li {
+    margin: 0 5px;
+  }
+
+.article__image {
+  background-size: contain;
+  width: 100%;
+}
+
+.article__image.pennetta {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-46905-w390-q90.jpg');
+  height: 500px;
+}
+
+.article__image.engman {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45623-w390-q90.jpg');
+  height: 487px;
+}
+
+.article__image.davidson {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45569-w390-q90.jpg');
+  height: 500px;
+}
+
+.article__image.mollison {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45446-w390-q90.jpg');
+  height: 257px;
+  width: 100%;
+}
+
+.article__image.shafran {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-43605-w390-q90.jpg');
+  height: 500px;
+}
+
+.article__image.troost {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45244-w390-q90.jpg');
+  height: 500px;
+}
+
+.article__image.pennetta-vogue {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-46814-w390-q90.jpg');
+  height: 500px;
+}
+
+.article__image.mollison-rubell {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-46807-w390-q90.jpg');
+  height: 250px;
+}
+
+.article__image.martensen {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-46075-w390-q90.jpg');
+  height: 495px;
+}
+
+.article__image.hawkesworth {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45489-w390-q90.jpg');
+  height: 500px;
+}
+
+.article__image.hawkesworth-kashmir {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45383-w390-q90.jpg');
+  height: 500px;
+}
+
+.article__image.konrath {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45224-w390-q90.jpg');
+  height: 488px;
+}
+
+.article__image.konrath-marcus {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-46811-w390-q90.jpg');
+  height: 488px;
+}
+
+.article__image.shafran-franzen {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-46192-w390-q90.jpg');
+  height: 488px;
+}
+
+.article__image.martensen-ransone {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45561-w390-q90.jpg');
+  height: 488px;
+}
+
+.article__image.hawkesworth-document {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45433-w390-q90.jpg');
+  height: 488px;
+}
+
+.article__image.wetherell {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45325-w390-q90.jpg');
+  height: 488px;
+}
+
+.article__image.pennetta-i-D {
+  background-image: url('http://yesassets.s3.amazonaws.com/map/cache/map-45204-w390-q90.jpg');
+  height: 488px;
+}
