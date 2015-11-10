@@ -5,29 +5,38 @@
     <title>AltSchool</title>
     <link type="text/css" rel="stylesheet" href="reset.css"/>
     <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-
-    <header>
-      <img src="https://www.altschool.com/assets/altschool-logo-d6c9830062ff52a05ba8f81c487e4ccd.svg" alt="" />
-      <ul>
-        <li>Education</li>
-        <li>Admissions</li>
-        <li>About Us</li>
-        <li>Jobs</li>
-        <span class="nav__hiring">We're Hiring</span>
+    <header class="header">
+      <img class="header__logo" src="https://www.altschool.com/assets/altschool-logo-d6c9830062ff52a05ba8f81c487e4ccd.svg" alt="" />
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="#">Education</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Admissions</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">About Us</a>
+        </li>
+        <li class="header__nav-item jobs-link">
+          <a href="#">Jobs</a>
+          <span class="header__hiring">We're Hiring</span>
+        </li>
       </ul>
     </header>
 
-    <section class="section hero">
+    <section class="section section--hero">
       <h1>School, reimagined.</h1>
     </section>
 
-    <section class="section section__applications">
-      <p>We are accepting applications for the 2016-2017 school year in
+    <section class="section section--applications">
+      <p>
+        We are accepting applications for the 2016-2017 school year in
         the following locations:
       </p>
-      <div class="locations">
+      <ul class="locations">
         <div class="location">
           <img src="https://d16myq7cnttdf1.cloudfront.net/homepage/icon-sf-c.svg" alt="" />
           San Francisco, CA
@@ -43,10 +52,10 @@
           Palo Alto, CA
           <button type="button" name="button">Learn More</button>
         </div>
-      </div>
+      </ul>
     </section>
 
-    <section class="section section__about">
+    <section class="section section--about">
       <p class="text">
         AltSchool prepares students for the future through personalized
         learning experiences within micro-school communities.
@@ -54,8 +63,7 @@
       <p class="text">
         Watch a day in the life of an AltSchool student.
       </p>
-      <video src="videofile.ogg" autoplay poster="posterimage.jpg">
-      </video>
+      <img src="https://embed-ssl.wistia.com/deliveries/aa3e7dd56daf0e6a4056cb68b201a9d3459e4e4c.jpg?image_crop_resized=640x360" />
       <div class="reasons">
         <div class="reason">
           <p class="title">Personalized, Whole-Child Learning</p>
@@ -82,10 +90,11 @@
       </div>
     </section>
 
-    <section class="section section__testimonial">
+    <section class="section section--testimonial">
       <img src="https://d16myq7cnttdf1.cloudfront.net/homepage/photo-parent-testimonial-c.jpg" alt="" />
       <div class="">
-        <p class="quote">“Learning shouldn’t feel like a chore. It should feel like
+        <p class="quote">
+          “Learning shouldn’t feel like a chore. It should feel like
           an experience. What I love about AltSchool is that my child is
           excited about learning each day.”
         </p>
@@ -94,7 +103,7 @@
       </div>
     </section>
 
-    <section class="section section__hiring">
+    <section class="section section--hiring">
       <p class="title">We're Hiring</p>
       <p class="body">
         Our world-class team of educators, entrepreneurs, and
@@ -109,23 +118,22 @@
       </div>
       <button type="button" name="button">View Open Positions</button>
     </section>
-    <section class="section section__feedback">
+
+    <section class="section section--feedback">
       <div class="feedback--text">
-        <p>We would love to hear from you.</p>
-        <p>We'd be happy to answer your questions about AltSchool. Provide your
+        <p class="title">We would love to hear from you.</p>
+        <p class="body">We'd be happy to answer your questions about AltSchool. Provide your
            contact info and we'll be in touch.</p>
-        <p>Are you looking for our locations? Learn more.</p>
+        <p class="link">Are you looking for our locations? Learn more.</p>
       </div>
       <div class="feedback--form">
-        <input type="button" name="name" value=""
-               placeholder="Your email address" />
-        <input type="button" name="name" value=""
-               placeholder="Your phone number (optional)" />
-        <input type="button" name="name" value=""
-               placeholder="Questions or comments? (optional)" />
+        <input placeholder="Your email address" />
+        <input placeholder="Your phone number (optional)" />
+        <textarea placeholder="Questions or comments? (optional)"></textarea>
         <button type="button" name="button">Submit</button>
       </div>
     </section>
+
     <footer>
       <ul class="footer__education">
         <li class="title">Education</li>
