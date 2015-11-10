@@ -1,0 +1,231 @@
+html {
+  color: #315892;
+  font-size: 18px;
+}
+
+header {
+  background-color: #2aaadd;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin: 0 10px;
+}
+
+header.nav__hiring {
+  background-color: #315892;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.hero {
+  align-items: center;
+  background-image: url('https://d16myq7cnttdf1.cloudfront.net/homepage/backdrop-5-c.jpg');
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.section__applications {
+  background-color: #fafafa;
+  flex-direction: column;
+}
+
+.section__applications .locations {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.locations .location {
+  align-items: center;
+  color: #2aaadd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.locations .location img {
+  margin-bottom: 20px;
+}
+
+.locations .location button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #2aaadd;
+  color: #2aaadd;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 8px 15px;
+}
+
+.section__about {
+  align-items: center;
+  flex-direction: column;
+}
+
+.section__about .text {
+  line-height: 200%;
+  text-align: center;
+  width: 400px;
+}
+
+.section__about .reasons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section__about .reasons .reason {
+  margin: 0 20px;
+  width: 33%;
+}
+
+.section__about .reasons .reason .title {
+  margin-bottom: 30px;
+}
+
+.section__about .reasons .reason .body {
+  color: black;
+  line-height: 150%;
+}
+
+.section__testimonial {
+  background-color: #315892;
+  color: white;
+}
+
+.section__testimonial img {
+  border-radius: 100%;
+  margin-right: 50px;
+}
+
+.section__testimonial .quote {
+  line-height: 200%;
+  width: 500px;
+}
+
+.section__testimonial .source {
+  color: #2aaadd;
+  margin-top: 20px;
+}
+
+.section__testimonial button {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+
+.section__hiring {
+  align-items: center;
+  flex-direction: column;
+}
+
+.section__hiring .title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.section__hiring .body {
+  line-height: 200%;
+  text-align: center;
+  width: 700px;
+}
+
+.section__hiring .hiring--image-container {
+  margin: 30px auto;
+}
+
+.section__hiring .hiring--image-container img {
+  border-radius: 100%;
+  margin: 0 10px;
+}
+
+.section__hiring button {
+  background: transparent;
+  border: 1px solid #315892;
+  border-radius: 5px;
+  color: #315892;
+  padding: 10px 30px;
+}
+
+.section__feedback {
+  background-color: #2aaadd;
+  display: flex;
+  justify-content: center;
+}
+
+.section__feedback .feedback--text {
+  color: white;
+  width: 50%;
+}
+
+.section__feedback .feedback--form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.section__feedback .feedback--form input {
+  color: gray;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.section__feedback .feedback--form button {
+  background-color: #15628e;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 8px 14px;
+}
+
+footer {
+  background-color: #353e48;
+  color: #353e48;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+footer ul {
+  width: 20%;
+}
+
+footer li {
+  color: #88919b;
+}
+
+footer li.title {
+  color: #d7d8da;
+  font-weight: bold;
+}
