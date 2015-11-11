@@ -26,16 +26,58 @@ html {
   display: flex;
 }
 
-.header__nav-item {
+.header__nav-link {
   font-weight: 300;
   letter-spacing: 1px;
   margin: 0 12px;
   padding: 30px 0;
+  position: relative;
 }
 
-.header__nav-item a {
+.header__nav-link a {
   color: white;
+  padding: 30px 0;
   text-decoration: none;
+  white-space: nowrap;
+}
+
+.link__dropdown {
+  background-color: #315892;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  left: 0;
+  padding: 8px 0;
+  position: absolute;
+  top: 76px;
+}
+
+.link__dropdown li {
+  font-size: 14px;
+  line-height: 125%;
+  padding: 5px 25px;
+}
+
+.link__dropdown li:hover {
+  background-color: #2aaadd;
+}
+
+.link__dropdown::before {
+  border-color: transparent transparent #315892 transparent;
+  border-style: solid;
+  border-width: 13px;
+  bottom: 100%;
+  content: "";
+  left: 25px;
+  position: absolute;
+}
+
+.link--education:hover .link__dropdown,
+.link--admissions:hover .link__dropdown,
+.link--about-us:hover .link__dropdown {
+  display: initial;
 }
 
 .header__hiring {
@@ -49,7 +91,7 @@ html {
   background-color: #3e6fb8;
 }
 
-.jobs-link:hover {
+.link--jobs:hover {
   border-bottom: 4px solid #315892;
   padding: 30px 0 26px 0;
 }
