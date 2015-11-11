@@ -12,6 +12,9 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header__logo {
@@ -54,27 +57,53 @@ html {
 .section {
   display: flex;
   justify-content: center;
-  padding: 50px 100px;
+  padding: 60px 100px;
 }
 
-.section--hero {
-  align-items: center;
-  background-image: url('https://d16myq7cnttdf1.cloudfront.net/homepage/backdrop-5-c.jpg');
-  display: flex;
-  justify-content: center;
-  height: 500px;
+.section--scrollable {
+  position: relative;
+  z-index: 100;
 }
 
-.section--hero h1 {
+.hero--image {
+  background-image: url('https://d16myq7cnttdf1.cloudfront.net/homepage/backdrop-1-c.jpg');
+  background-size: cover;
+  background-position: 0 35%;
+  height: 450px;
+  position: fixed;
+  top: 76px;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero--title {
   color: white;
+  display: block;
   font-size: 48px;
   font-weight: bold;
+  height: 500px;
+  line-height: calc(50vh);
+  max-height: calc(100vh + 100px);
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
 }
 
 .section--applications {
   align-items: center;
   background-color: #fafafa;
   flex-direction: column;
+}
+
+.section--applications p {
+  color: gray;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 200%;
+  text-align: center;
+  width: 500px;
 }
 
 .section--applications .locations {
@@ -108,15 +137,22 @@ html {
   padding: 8px 15px;
 }
 
+.locations .location button:hover {
+  background-color: #2aaadd;
+  color: white;
+}
+
 .section--about {
   align-items: center;
+  background-color: white;
   flex-direction: column;
 }
 
 .section--about .text {
+  font-weight: 300;
   line-height: 200%;
   text-align: center;
-  width: 400px;
+  width: 500px;
 }
 
 .section--about img {
@@ -136,32 +172,42 @@ html {
 }
 
 .section--about .reasons .reason .title {
-  line-height: 25%;
+  line-height: 125%;
   margin-bottom: 30px;
 }
 
 .section--about .reasons .reason .body {
   color: #353e48;
   font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
   line-height: 150%;
 }
 
 .section--testimonial {
   background-color: #315892;
   color: white;
+  flex-direction: column;
 }
 
-.section--testimonial img {
+.section--testimonial .main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container img {
   border-radius: 100%;
   margin-right: 50px;
 }
 
-.section--testimonial .quote {
-  line-height: 200%;
+.main-container .quote {
+  font-size: 24px;
+  line-height: 175%;
   width: 500px;
 }
 
-.section--testimonial .source {
+.main-container .source {
   color: #2aaadd;
   margin-top: 20px;
 }
@@ -171,12 +217,20 @@ html {
   border: 1px solid white;
   border-radius: 5px;
   color: white;
-  margin-top: 20px;
-  padding: 10px 30px;
+  font-size: 13px;
+  margin: 10px auto 0;
+  padding: 10px 40px;
+  width: 180px;
+}
+
+.section--testimonial button:hover {
+  background-color: white;
+  color: #315892;
 }
 
 .section--hiring {
   align-items: center;
+  background-color: white;
   flex-direction: column;
 }
 
@@ -205,7 +259,13 @@ html {
   border: 1px solid #315892;
   border-radius: 5px;
   color: #315892;
+  font-size: 14px;
   padding: 10px 30px;
+}
+
+.section--hiring button:hover {
+  background-color: #315892;
+  color: white;
 }
 
 .section--feedback {

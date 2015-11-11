@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>AltSchool</title>
-    <link type="text/css" rel="stylesheet" href="reset.css"/>
+    <link type="text/css" rel="stylesheet" href="lynnetye-reset.css"/>
     <link type="text/css" rel="stylesheet" href="index.css"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
   </head>
+
   <body>
     <header class="header">
       <img class="header__logo" src="https://www.altschool.com/assets/altschool-logo-d6c9830062ff52a05ba8f81c487e4ccd.svg" alt="" />
@@ -27,14 +28,22 @@
       </ul>
     </header>
 
-    <section class="section section--hero">
+    <section class="hero--image">
+      <!--<img src="https://d16myq7cnttdf1.cloudfront.net/homepage/backdrop-1-c.jpg" alt="" /> -->
+      <!--<img src="https://d16myq7cnttdf1.cloudfront.net/homepage/backdrop-2-c.jpg" alt="" /> -->
+      <!--<img src="https://d16myq7cnttdf1.cloudfront.net/homepage/backdrop-3-c.jpg" alt="" /> -->
+      <!--<img src="https://d16myq7cnttdf1.cloudfront.net/homepage/backdrop-4-c.jpg" alt="" /> -->
+      <!--<img src="https://d16myq7cnttdf1.cloudfront.net/homepage/backdrop-5-c.jpg" alt="" /> -->
+    </section>
+
+    <section class="section--scrollable hero--title">
       <h1>School, reimagined.</h1>
     </section>
 
-    <section class="section section--applications">
+    <section class="section section--scrollable section--applications">
       <p>
-        We are accepting applications for the 2016-2017 school year in
-        the following locations:
+        We are accepting applications for the <br>
+        2016-2017 school year in the following locations:
       </p>
       <ul class="locations">
         <div class="location">
@@ -55,7 +64,7 @@
       </ul>
     </section>
 
-    <section class="section section--about">
+    <section class="section section--scrollable section--about">
       <p class="text">
         AltSchool prepares students for the future through personalized
         learning experiences within micro-school communities.
@@ -90,20 +99,22 @@
       </div>
     </section>
 
-    <section class="section section--testimonial">
-      <img src="https://d16myq7cnttdf1.cloudfront.net/homepage/photo-parent-testimonial-c.jpg" alt="" />
-      <div class="">
-        <p class="quote">
-          “Learning shouldn’t feel like a chore. It should feel like
-          an experience. What I love about AltSchool is that my child is
-          excited about learning each day.”
-        </p>
-        <p class="source">Patricia, AltSchool Parent</p>
-        <button type="button" name="button">Apply Today</button>
+    <section class="section section--scrollable section--testimonial">
+      <div class="main-container">
+        <img src="https://d16myq7cnttdf1.cloudfront.net/homepage/photo-parent-testimonial-c.jpg" alt="" />
+        <div class="">
+          <p class="quote">
+            “Learning shouldn’t feel like a chore. It should feel like
+            an experience. What I love about AltSchool is that my child is
+            excited about learning each day.”
+          </p>
+          <p class="source">Patricia, AltSchool Parent</p>
+        </div>
       </div>
+      <button type="button" name="button">Apply Today</button>
     </section>
 
-    <section class="section section--hiring">
+    <section class="section section--scrollable section--hiring">
       <p class="title">We're Hiring</p>
       <p class="body">
         Our world-class team of educators, entrepreneurs, and
@@ -119,7 +130,7 @@
       <button type="button" name="button">View Open Positions</button>
     </section>
 
-    <section class="section section--feedback">
+    <section class="section section--scrollable section--feedback">
       <div class="feedback--text">
         <p class="title">We would love to hear from you.</p>
         <p class="body">We'd be happy to answer your questions about AltSchool. Provide your
@@ -134,7 +145,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="section--scrollable">
       <ul class="footer__education">
         <li class="title">Education</li>
         <li>Educational Approach</li>
